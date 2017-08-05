@@ -4,12 +4,12 @@
   display: inline-block;
 
   
-  &.youtube 	  { background-image: url("/images/yt-icon.png"); }
-  &.twitter       { background-image: url("/images/tw-icon.png"); }
-  &.instagram     { background-image: url("/images/ig-icon.png"); }
-  &.linkedin      { background-image: url("/images/li-icon.png"); }
-  &.github        { background-image: url("/images/gh-icon.png"); }
-  &.email         { background-image: url("/images/em-icon.png"); }
-  &.blog          { background-image: url("/images/bg-icon.png"); }
+  &.youtube 	  { background-image: url("/images/yt-icon.png"); background-size: cover;}
+  &.twitter       { background-image: url("/images/tw-icon.png"); background-size: cover;}
+  &.instagram     { background-image: url("/images/ig-icon.png"); background-size: cover;}
+  &.linkedin      { background-image: url("/images/li-icon.png"); background-size: cover;}
+  &.github        { background-image: url("/images/gh-icon.png"); background-size: cover;}
+  &.email         { background-image: url("/images/em-icon.png"); background-size: cover;}
+  &.blog          { background-image: url("/images/bg-icon.png"); background-size: cover;}
   
 }
