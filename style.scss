@@ -66,7 +66,7 @@ h4 {
 }
 
 p {
-  margin: 15px 0;
+  margin: 1em;
 }
 
 a {
@@ -121,6 +121,8 @@ img {
   float:right;
   color: $gray;
   vertical-align: baseline;
+  margin: 1px;   	// cancel out the p margin which throws off alignment. Should be 0 but there's the stupid title to date alignment issue
+					// This hack "fixes" it.  CSS is a pain. 
 
 }
 
