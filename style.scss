@@ -186,8 +186,14 @@ img {
 }
 
 .site-info {
-  float: none;
-  margin: 0 auto;
+
+  text-align: center;
+
+  @include mobile {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .site-name {
