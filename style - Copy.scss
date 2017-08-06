@@ -19,9 +19,8 @@ html {
 
 body {
 	background: $white;
-	font-family: 'Raleway', sans-serif;
-	font-size: 1em;
-	color: $black;
+  font: 18px/1.4 $helvetica;
+  color: $darkGray;
 }
 
 .container {
