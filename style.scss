@@ -75,7 +75,7 @@ a {
 	cursor: pointer;
 	color: $blue;
 	&:hover, &:active, &:visited {
-		color: inherit;
+		color: &blue;
 	}
 }
 
