@@ -186,7 +186,7 @@ img {
 }
 
 .site-info {
-  float: left;
+  float: center;
 
   @include mobile {
     float: none;
@@ -201,7 +201,6 @@ img {
   font-weight: 300;
   font-size: 2em;
   letter-spacing: 5px;
-  align: center;
 }
 
 .site-description {
