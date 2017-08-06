@@ -2,5 +2,18 @@
 layout: default
 ---
 
-This is a markdown test. This is **bold**  This is *italics*
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">
+	<a href="{{ site.baseurl }}{{ post.url }}" class="date">{{ post.date | date: "%B %e, %Y" }}</a>
 
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>
