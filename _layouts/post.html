@@ -13,7 +13,7 @@ layout: default
     Written: {{ page.date | date: '%b %e, %Y' }}
   </div>
   <div class="date">
-	Updated: {{ page.date | date: '%b %e, %Y' }}
+	Updated: {% last_modified_at %Y:%B:%A:%d:%S:%R %}
   </div>
 
   {% include disqus.html %}
