@@ -156,7 +156,7 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+  margin-bottom: 5px;
 }
 
 .masthead {
@@ -197,11 +197,10 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
   cursor: pointer;
   font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
+  font-size: 2em;
+  letter-spacing: 3px;
 }
 
 .site-description {
