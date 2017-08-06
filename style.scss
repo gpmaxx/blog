@@ -19,8 +19,9 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1em;
+  	color: $black;
 }
 
 .container {
@@ -116,9 +117,16 @@ img {
 }
 
 .date {
+
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+  font-size: .75em;
   font-style: italic;
-  color: $gray;
+  font-weight: normal;
+  text-decoration: none;
 }
+
+
 
 // Specify the color of the selection
 ::-moz-selection {
