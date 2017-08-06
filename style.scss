@@ -50,6 +50,7 @@ h1 {
   font-size: 2em;
   a {
     color: inherit;
+	
   }
 }
 
@@ -72,7 +73,9 @@ p {
 a {
 	text-decoration: none;
 	cursor: pointer;
-
+	&:hover, &:active {
+		color: inherit;
+	}
 }
 
 ul, ol {
