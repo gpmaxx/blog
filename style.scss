@@ -33,6 +33,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   
+  
   font-weight: bold;
 
   line-height: 1.7;
@@ -45,6 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+	display: inline;
   font-size: 2em;
   a {
     color: inherit;
@@ -116,7 +118,6 @@ img {
 
 .date {
   font-style: italic;
-  display: inline;
   float:right;
   color: $gray;
 }

@@ -8,7 +8,7 @@ layout: default
 	
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-	  <a href="{{ site.baseurl }}{{ post.url }}" class="date">{{ post.date | date: "%b %e, %Y" }}</a>
+	  <p class="date">Written: <a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date: "%b %e, %Y" }}</a></p>
       <div class="entry">
         {{ post.excerpt }}
       </div>
