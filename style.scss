@@ -219,6 +219,7 @@ nav {
   //margin-top: 23px; // @TODO: Vertically middle align
   font-size: 1em;
   font-weight: strong;
+  display: inline;
 
   @include mobile {
     float: none;
