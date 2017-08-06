@@ -60,5 +60,5 @@ Finally, horizontal lines
 
 You can do sweet emojis :relaxed:
 
-? This is a check
-?  This  is  an  X
+✓ This is a check
+✘  This  is  an  X
