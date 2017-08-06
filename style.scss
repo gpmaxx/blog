@@ -188,7 +188,7 @@ img {
 }
 
 .site-info {
-  float: left;
+  text-align: center;
 
   @include mobile {
     float: none;
@@ -204,7 +204,7 @@ img {
   font-family: $helveticaNeue;
   font-weight: 300;
   font-size: 28px;
-  letter-spacing: 1px;
+  letter-spacing: .25em;
 }
 
 .site-description {
@@ -274,7 +274,6 @@ nav {
   }
 
   .read-more {
-	margin-top: 1em;
     text-transform: uppercase;
     font-size: 1em;
   }
