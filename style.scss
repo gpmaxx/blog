@@ -19,9 +19,8 @@ html {
 
 body {
 	background: $white;
-	font-family: 'Raleway', sans-serif;
-	font-size: 1em;
-  	color: $black;
+  font: 18px/1.4 $helvetica;
+  color: $darkGray;
 }
 
 .container {
@@ -32,7 +31,10 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: $helveticaNeue;
+  color: $darkerGray;
   font-weight: bold;
+
   line-height: 1.7;
   margin: 1em 0 15px;
   padding: 0;
@@ -42,24 +44,24 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-h1 
-	font-size: 2em;
-	a {
-		color: inherit;
-	}
+h1 {
+  font-size: 30px;
+  a {
+    color: inherit;
+  }
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 24px;
 }
 
 h3 {
-  font-size: 1.25em;
+  font-size: 20px;
 }
 
 h4 {
-  font-size: 1em;
- 
+  font-size: 18px;
+  color: $gray;
 }
 
 p {
@@ -114,16 +116,9 @@ img {
 }
 
 .date {
-
-  color: #000000;
-  font-family: 'Raleway', sans-serif;
-  font-size: .75em;
   font-style: italic;
-  font-weight: normal;
-  text-decoration: none;
+  color: $gray;
 }
-
-
 
 // Specify the color of the selection
 ::-moz-selection {
