@@ -160,7 +160,7 @@ img {
 }
 
 .masthead {
-  padding: 20px 0;
+  padding: 10px 0;
   border-bottom: 1px solid $lightGray;
 
   @include mobile {
@@ -200,7 +200,8 @@ img {
   cursor: pointer;
   font-weight: 300;
   font-size: 2em;
-  letter-spacing: 3px;
+  letter-spacing: 5px;
+  align: center;
 }
 
 .site-description {
