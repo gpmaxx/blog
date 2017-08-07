@@ -20,33 +20,16 @@ layout: default
 	<div class="PageNavigation">
 		{% if paginator.previous_page %}
 		<div class="prev">
-			<a class="dir" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Newer</a>
-		</div>
+			<a class="arrow" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Newer</a>
 		{% else %}
-		<div class="prev">
-			<span class="dir">&laquo; Newer</span>
+			<span class="arrow">&laquo; Newer</span>
 		</div>
 		{% endif %}
-		
-		<!--
-		{% for page in (1..paginator.total_pages) %}
-		{% if page == paginator.page %}
-			<em>{{ page }}</em>
-		{% elsif page == 1 %}
-			<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-		{% else %}
-			<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-		{% endif %}
-		{% endfor %}
-		-->
-		
 		{% if paginator.next_page %}
 		<div class="next">
-			<a class="dir" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older &raquo;</a>
-		</div>
+			<a class="arrow" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older &raquo;</a>
 		{% else %}
-		<div class="next">
-			<span class="dir">Older &raquo;</span>
+			<span class="arrow">Older &raquo;</span>
 		</div>
 		{% endif %}
 	</div>
