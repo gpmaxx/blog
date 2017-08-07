@@ -17,14 +17,20 @@ layout: default
   {% endfor %}
   
 	<div class="PageNavigation">
-	<div class="prev">
-		<!--<a href="newer.html" class="arrow">&laquo;&nbsp;Newer</a>-->
-		<span class="arrow">Newer</a>
-	</div>
-	<div class="next">
-		<!--<a href="Older.html" class="arrow">Older&nbsp;&raquo;</a>-->
-		<span class="arrow">Older</a>
-	</div>
+		<div class="prev">
+			{% if paginator.previous_page %}
+				<a class="arrow" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Newer</a>
+			{% else %}
+				<span class="arrow">&laquo; Newer</a>
+			{% endif %}
+			</div>
+			<div class="next">
+			{% if paginator.next_page %}
+				<a class="arrow" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older &raquo;</a>
+			{% else %}
+				<span class="arrow">Older &raquo;</a>
+			{% endif %}	
+		</div>
 	</div>
   
  
