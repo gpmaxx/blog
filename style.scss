@@ -305,12 +305,11 @@ footer {
 
 /* Pagination */
 
-.prev {
+.prev a,span {
 	margin-top: 1em;
 }
 
-.next {
-	float: right;
+.next a,span { 
 	margin-top: 1em;
 }
 
@@ -338,7 +337,9 @@ footer {
     }
 }
 		
-
+.next {
+	float: right;
+}
 
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
