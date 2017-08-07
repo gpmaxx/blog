@@ -317,23 +317,21 @@ footer {
   overflow: hidden;
 }
 
+.PageNavigation div.prev {
+	width: 50%;
+}
+
 .PageNavigation a {
   display: block;
   float: left;
   margin: 2em 0 0 0;
 }
 
-.PageNavigation .prev {
-	@include mobile {
-		width: 0%;
-	}
-}
 
 .PageNavigation .prevTitle {
 
 	@include mobile {
 		visibility: hidden;
-		width: 50%;
 	}
 }
 
