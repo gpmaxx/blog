@@ -360,7 +360,8 @@ footer {
 	width: 100%;
 	
 	@include mobile {
-		visibility: hidden;	
+		visibility: hidden;
+		width: 0%;
 	}
 }
 

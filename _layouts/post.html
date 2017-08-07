@@ -20,7 +20,8 @@ layout: default
 	</div>
 	<div class="next">
 		<a class="next" href="{{ site.baseurl }}{{page.next.url}}">NEXT</a>
-		<a class="nextTitle" href="{{ site.baseurl }}{{page.next.url}}">: {{page.next.title}} &raquo;</a>
+		<a class="nextTitle" href="{{ site.baseurl }}{{page.next.url}}">: {{page.next.title}}</a>
+		<a href="{{ site.baseurl }}{{page.next.url}}">&raquo;</a>
 	</div>
 	{% else %}
 		{% if page.previous.url %}
