@@ -20,11 +20,11 @@ layout: default
 	<div class="PageNavigation">
 		{% if paginator.previous_page %}
 		<div class="prev">
-			<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Newer</a>
+			<a class="dir" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Newer</a>
 		</div>
 		{% else %}
 		<div class="prev">
-			<span>&laquo; Newer</span>
+			<span class="dir">&laquo; Newer</span>
 		</div>
 		{% endif %}
 		
@@ -42,11 +42,11 @@ layout: default
 		
 		{% if paginator.next_page %}
 		<div class="next">
-			<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older &raquo;</a>
+			<a class="dir" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older &raquo;</a>
 		</div>
 		{% else %}
 		<div class="next">
-			<span>Older &raquo;</span>
+			<span class="dir">Older &raquo;</span>
 		</div>
 		{% endif %}
 	</div>
