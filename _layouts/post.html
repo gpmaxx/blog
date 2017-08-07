@@ -12,33 +12,18 @@ layout: default
     {{ content }}
   </div>
 
- <div class="PageNavigation">
-	{% if page.previous.url and page.next.url %}
-	<div class="prev">
-		<a class="prev" href="{{ site.baseurl }}{{page.previous.url}}">&laquo; PREV</a> </a>
-		<a class="prevTitle" href="{{ site.baseurl }}{{page.previous.url}}">: {{page.previous.title}}</a>
-	</div>
-	<div class="next">
-		<a class="next" href="{{ site.baseurl }}{{page.next.url}}">NEXT</a>
-		<a class="nextTitle" href="{{ site.baseurl }}{{page.next.url}}">: {{page.next.title}}</a>
-		<a href="{{ site.baseurl }}{{page.next.url}}">&raquo;</a>
-	</div>
-	{% else %}
-		{% if page.previous.url %}
+	<div class="PageNavigation">
 		<div class="prev">
-			<a class="prev" href="{{ site.baseurl }}{{page.previous.url}}">&laquo; PREV</a> </a>
-			<a class="prevTitle" href="{{ site.baseurl }}{{page.previous.url}}">: {{page.previous.title}}</a>
+			<a href="prev.html" class="arrow">&laquo;&nbsp;</a>
+			<a href="prev.html" class="dir">Prev</a>
+			<a href="prev.html" class="title">: Hey how's it going?</a>
 		</div>
-		{% else %}
-		<div class="nextOnly">
-			<a class="nextOnly" href="{{ site.baseurl }}{{page.next.url}}">NEXT</a>
-			<a class="nextTitleOnly" href="{{ site.baseurl }}{{page.next.url}}">: {{page.next.title}}</a>
-			<a href="{{ site.baseurl }}{{page.next.url}}">&raquo;</a>
+		<div class="next">
+			<a href="next.html" class="dir">Next</a>
+			<a href="next.html" class="title">: This is a long article name</a>
+			<a href="next.html" class="arrow">&nbsp;&raquo;</a>
 		</div>
-		{% endif %}
-	{% endif %}
-</div>
+	</div>
   
-
   {% include disqus.html %}
 </article>

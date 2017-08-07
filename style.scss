@@ -308,61 +308,28 @@ footer {
   text-align: center;
 }
 
-/* pagination */
+/* Pagination */
 
-.PageNavigation {
-  font-size: 1em;
-  display: block;
-  width: auto;
-  overflow: hidden;
-}
-
-.PageNavigation div.prev {
-	width: 50%;
+.arrow {
 	float: left;
 }
 
-.PageNavigation a {
-  display: line;
-  margin: 2em 0 0 0;
+.dir {	
+	float:left;
 }
-
-
-.PageNavigation .prevTitle {
-
-	width: 50%;
-	@include mobile {
-		visibility: hidden;
-	}
+		
+.prev .title {
+	float:left;
+	//display:none;
 }
-
-.PageNavigation .nextTitle {
-
-	text-align: right;
-	
-	@include mobile {
-		visibility: hidden;	
-	}
+		
+.next .title {
+	float:left;
+			//display:none;
 }
-
-.PageNavigation .next {
-  text-align: right;
-}
-
-.PageNavigation .nextOnly {
-  text-align: right;
-  width: 100%;				// we need to use the whole width beause there is no previous tag
-}
-
-.PageNavigation .nextTitleOnly {
-
-	text-align: right;
-	width: 100%;
-	
-	@include mobile {
-		visibility: hidden;
-		width: 0%;
-	}
+		
+.next {
+	float: right;
 }
 
 
