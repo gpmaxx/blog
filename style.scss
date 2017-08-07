@@ -280,7 +280,7 @@ nav {
 }
 
 .wrapper-footer {
-  margin-top: .5em;
+  margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background-color: $lightGray;
@@ -294,7 +294,7 @@ footer {
 /* pagination */
 
 .PageNavigation {
-  font-size: 1em;
+  font-size: .75em;
   display: block;
   width: auto;
   overflow: hidden;
@@ -304,7 +304,7 @@ footer {
   display: block;
   width: 100%;
   float: left;
-  margin: 2em 0 0 0;
+  margin: 1em 0;
 }
 
 .PageNavigation .next {
