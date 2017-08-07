@@ -14,8 +14,8 @@ layout: default
 
  <div class="PageNavigation">
 	{% if page.previous.url and page.next.url %}
-		<a class="prev" href="{{ site.baseurl }}{{page.previous.url}}">&laquo; prev posting: {{page.previous.title}}</a>
-		<a class="next" href="{{ site.baseurl }}{{page.next.url}}">next posting: {{page.next.title}} &raquo;</a>
+		<a class="prev" href="{{ site.baseurl }}{{page.previous.url}}">&laquo; PREV: {{page.previous.title}}</a>
+		<a class="next" href="{{ site.baseurl }}{{page.next.url}}">NEXT: {{page.next.title}} &raquo;</a>
 	{% else %}
 		{% if page.previous.url %}
 			<a class="prev" href="{{ site.baseurl }}{{page.previous.url}}">&laquo; PREV: {{page.previous.title}}</a>
