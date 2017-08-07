@@ -328,12 +328,18 @@ footer {
 		
 .prev .title {
 	float:left;
-	//display:none;
+	
+	@include mobile {
+		diaply:none;
+    }
 }
 		
 .next .title {
 	float:left;
-			//display:none;
+	
+	@include mobile {
+		display: none; 
+    }
 }
 		
 .next {
