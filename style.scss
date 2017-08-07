@@ -324,13 +324,39 @@ footer {
   margin: 2em 0 0 0;
 }
 
+.PageNavigation .prevTitle {
+
+	@include mobile {
+		visibility: hidden;	
+	}
+}
+
+.PageNavigation .nextTitle {
+
+	text-align: right;
+	
+	@include mobile {
+		visibility: hidden;	
+	}
+}
+
 .PageNavigation .next {
   text-align: right;
 }
 
-.PageNavigation .next_only {
+.PageNavigation .nextOnly {
   text-align: right;
   width: 100%;				// we need to use the whole width beause there is no previous tag
+}
+
+.PageNavigation .nextTitleOnly {
+
+	text-align: right;
+	width: 100%;
+	
+	@include mobile {
+		visibility: hidden;	
+	}
 }
 
 
