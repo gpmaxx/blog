@@ -330,6 +330,7 @@ footer {
 
 .PageNavigation .prevTitle {
 
+	width: 50%;
 	@include mobile {
 		visibility: hidden;
 	}
