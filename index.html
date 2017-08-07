@@ -18,20 +18,21 @@ layout: default
   
 	
 	<div class="PageNavigation">
-		{% if paginator.previous_page %}
+		
 		<div class="prev">
+		{% if paginator.previous_page %}
 			<a class="arrow" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Newer</a>
 		{% else %}
 			<span class="arrow">&laquo; Newer</span>
-		</div>
 		{% endif %}
-		{% if paginator.next_page %}
+		</div>
 		<div class="next">
+		{% if paginator.next_page %}
 			<a class="arrow" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older &raquo;</a>
 		{% else %}
 			<span class="arrow">Older &raquo;</span>
-		</div>
 		{% endif %}
+		</div>
 	</div>
   
  
