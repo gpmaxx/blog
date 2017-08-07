@@ -18,7 +18,7 @@ layout: default
   
 	
 	<div class="PageNavigation">
-		{% if paginator.previous_page % }
+		{% if paginator.previous_page %}
 		<div class="prev">
 			<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Newer</a>
 		</div>
@@ -28,7 +28,7 @@ layout: default
 		</div>
 		{% endif %}
 		
-		<! --
+		<!--
 		{% for page in (1..paginator.total_pages) %}
 		{% if page == paginator.page %}
 			<em>{{ page }}</em>
