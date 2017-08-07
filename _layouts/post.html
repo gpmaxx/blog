@@ -12,18 +12,21 @@ layout: default
     {{ content }}
   </div>
 
+   <! -- The notion of previous and next between pages and pagnation is opposite. So to align them the if is refersed
+   for pagination getting the previous page gets newer postings. But for page. Getting previous gets older postings. -->
+   
 	<div class="PageNavigation">
-		{% if page.previous.url %}
+		{% if page.next.url %}
 		<div class="prev">
 			<a href="{{ site.baseurl }}{{page.previous.url}}" class="arrow">&laquo;&nbsp;</a>
-			<a href="{{ site.baseurl }}{{page.previous.url}}" class="dir">Prev</a>
-			<a href="{{ site.baseurl }}{{page.previous.url}}" class="title">: {{page.previous.title}}</a>
+			<a href="{{ site.baseurl }}{{page.previous.url}}" class="dir">Newer</a>
+			<a href="{{ site.baseurl }}{{page.previous.url}}" class="title">: {{page.next.title}}</a>
 		</div>
 		{% endif %}
-		{% if page.next.url %}
+		{% if page.previous.url %}
 		<div class="next">
-			<a href="{{ site.baseurl }}{{page.next.url}}" class="dir">Next</a>
-			<a href="{{ site.baseurl }}{{page.next.url}}" class="title">: {{page.next.title}}</a>
+			<a href="{{ site.baseurl }}{{page.next.url}}" class="dir">Older</a>
+			<a href="{{ site.baseurl }}{{page.next.url}}" class="title">: {{page.previous.title}}</a>
 			<a href="{{ site.baseurl }}{{page.next.url}}" class="arrow">&nbsp;&raquo;</a>
 		</div>
 		{% endif %}
