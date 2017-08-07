@@ -23,11 +23,6 @@ body {
 	font-size: 1em;
 	color: $black;
 	
-	
-	@include mobile {
-		color: $blue;
-	
-	}
 }
 
 .container {
