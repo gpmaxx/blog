@@ -18,16 +18,16 @@ layout: default
 	<div class="PageNavigation">
 		{% if page.next.url %}
 		<div class="prev">
-			<a href="{{ site.baseurl }}{{page.previous.url}}" class="arrow">&laquo;&nbsp;</a>
-			<a href="{{ site.baseurl }}{{page.previous.url}}" class="dir">Newer</a>
-			<a href="{{ site.baseurl }}{{page.previous.url}}" class="title">: {{page.next.title}}</a>
+			<a href="{{ site.baseurl }}{{page.next.url}}" class="arrow">&laquo;&nbsp;</a>
+			<a href="{{ site.baseurl }}{{page.next.url}}" class="dir">Newer</a>
+			<a href="{{ site.baseurl }}{{page.next.url}}" class="title">: {{page.next.title}}</a>
 		</div>
 		{% endif %}
 		{% if page.previous.url %}
 		<div class="next">
-			<a href="{{ site.baseurl }}{{page.next.url}}" class="dir">Older</a>
-			<a href="{{ site.baseurl }}{{page.next.url}}" class="title">: {{page.previous.title}}</a>
-			<a href="{{ site.baseurl }}{{page.next.url}}" class="arrow">&nbsp;&raquo;</a>
+			<a href="{{ site.baseurl }}{{page.previous.url}}" class="dir">Older</a>
+			<a href="{{ site.baseurl }}{{page.previous.url}}" class="title">: {{page.previous.title}}</a>
+			<a href="{{ site.baseurl }}{{page.previous.url}}" class="arrow">&nbsp;&raquo;</a>
 		</div>
 		{% endif %}
 	</div>
