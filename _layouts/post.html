@@ -14,9 +14,7 @@ layout: default
 
    <!-- The notion of previous and next between pages and pagnation is opposite. So to align them the if is refersed
    for pagination getting the previous page gets newer postings. But for page. Getting previous gets older postings. -->
-   
-	URL: {{ page.url }}
-	Full URL: {{ site.url }}{{{site.baseurl}}{{page.url}}
+
 	<div class="PageNavigation">
 		{% if page.next.url %}
 		<div class="prev">
@@ -34,7 +32,6 @@ layout: default
 		{% endif %}
 	</div>
 
-	{% if page.disqus %}
-		{% include disqus.html %}
-	{% endif %}
+	{% include disqus.html %}
+
 </article>
