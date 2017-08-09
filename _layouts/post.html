@@ -16,6 +16,7 @@ layout: default
    for pagination getting the previous page gets newer postings. But for page. Getting previous gets older postings. -->
    
 	URL: {{ page.url }}
+	Full URL: {{ site.url }}{{{site.baseurl}}{{post.url}}
 	<div class="PageNavigation">
 		{% if page.next.url %}
 		<div class="prev">
