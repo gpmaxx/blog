@@ -12,11 +12,6 @@ layout: default
     {{ content }}
   </div>
   
-	{% if site.disqus and page.comments %}
-		comments enabled
-	{% else %}
-		comments disabled
-	{% endif %}
 
    <!-- The notion of previous and next between pages and pagnation is opposite. So to align them the if is refersed
    for pagination getting the previous page gets newer postings. But for page. Getting previous gets older postings. -->
