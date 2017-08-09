@@ -11,6 +11,13 @@ layout: default
   <div class="entry">
     {{ content }}
   </div>
+  
+  Disqus: {{ page.disqus }}
+  greg: {{ page.greg }}
+  
+  {% if page.greg %}
+  hello there
+  {% endif %}
 
    <!-- The notion of previous and next between pages and pagnation is opposite. So to align them the if is refersed
    for pagination getting the previous page gets newer postings. But for page. Getting previous gets older postings. -->
