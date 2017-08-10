@@ -50,8 +50,14 @@ url:  http://lipscomb.ca
 baseurl: "/blog"
 
 paginate: 5
-paginate_path: "/page:num/"
+paginate_path: /page:num/
 
+defaults: 
+  - scope:
+      path: /page
+    values:
+      sitemap: false
+    
 #
 # !! You don't need to change any of the configuration flags below !!
 #
