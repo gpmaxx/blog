@@ -16,7 +16,7 @@ avatar: /images/jekyll-logo.png
 #
 
 # Includes an icon in the footer for each username you enter
-footer-links:
+sm-links:
   dribbble:
   email: g_lipscomb@hotmail.com
   facebook:
