@@ -10,13 +10,12 @@ layout: default
     Written: {{ page.date | date: '%b %e, %Y' }}
   </p>
   
-  
-  <div class="fb-share-button" data-href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" data-layout="button" data-size="small" data-mobile-iframe="true">
-		<a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flipscomb.ca%2Fblog%2F&amp;src=sdkpreparse"></a>
+	<div class="social">
+		<div class="fb-share-button" data-href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" data-layout="button" data-size="small" data-mobile-iframe="true">
+			<a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flipscomb.ca%2Fblog%2F&amp;src=sdkpreparse"></a>
+		</div>
+		<a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false"></a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 	</div>
-  
-    <a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false"></a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-  
   
   <div class="entry">
     {{ content }}
