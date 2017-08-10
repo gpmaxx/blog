@@ -23,6 +23,7 @@ body {
 	font-size: 1em;
 	color: $black;
 	clear: both;
+	display: block;
 	
 }
 
@@ -141,8 +142,11 @@ img {
 	vertical-align: top;
 }
 
-.fb-share-button {
+.fb-share-button .span {
+	vertical-align: top;
+}
 
+.fb-share-button {
 	vertical-align: top;
 }
 
