@@ -130,16 +130,18 @@ img {
 }
 
 .fb-share-button {
-	//float: right;
+	float: left;
+	display: block;
 }
 
 .fb-share-button .span {
 	margin-top: 0;
 	top: -6px;
+	display: block;
 }
 
 .twitter-share-button {
-	//float: right;
+	float: left;
 }
 
 .date {
