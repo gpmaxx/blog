@@ -1,7 +1,7 @@
 ---
 layout: post
 title: You're up and running!
-category: Testing
+category: testing
 tags: scuba travel
 ---
 
