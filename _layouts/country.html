@@ -12,26 +12,49 @@ layout: default
 {% endunless %}
 
 {% for post in site.categories.[page.category] %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">            
-            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-    </a>
-    <p class="post-meta">
-      Posted by 
-      {% if post.author %}
-        {{ post.author }}
-      {% else %}
-        {{ site.title }}
-      {% endif %} 
-      on {{ post.date | date: "%B %-d, %Y" }}
-    </p>
-</div>
-<hr>
+   <article class="post">
+
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+	  <p class="date"><a href="{{ site.baseurl }}{{ post.url }}" class="date">Written: {{ post.date | date: "%b %e, %Y" }}</a></p>
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <p><a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Continue Reading</a><p>
+    </article>
 {% endfor %}
+
+{% assign prev = "" %}
+{% assign next = "" %}
+{% assign stop = false %}
+{% for post in site.posts %}
+	{% if post == page %}
+		{% assign stop = true %}
+	{% elsif post.category == page.category %}
+		{% if stop %}
+			{% assign prev = post.url %}
+			{% assign pTitle = post.title %}
+			{% break %}
+		{% else %}
+			{% assign next = post.url %}
+			{% assign nTitle = post.title %}
+		{% endif %}
+	{% endif %}
+{% endfor%}
+
+<div class="PageNavigation">
+		<div class="prev">
+			{% if prev != "" %}
+				<a class="arrow" href="{{ prev | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Newer</a>
+			{% else %}
+				<span class="arrow">&laquo; Newer</a>
+			{% endif %}
+			</div>
+			<div class="next">
+			{% if next != "" %}
+				<a class="arrow" href="{{ next | prepend: site.baseurl | replace: '//', '/' }}">Older &raquo;</a>
+			{% else %}
+				<span class="arrow">Older &raquo;</a>
+			{% endif %}	
+		</div>
+	</div>

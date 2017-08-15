@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Awsome-Title
-category: testing
+category: thailand
 tags: food
 ---
 

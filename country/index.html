@@ -22,7 +22,7 @@ The purpose of this snippet is to list all your posts posted with a certain tag.
 		 <small>{{ post.date | date_to_string }}</small>
 		 </a>
 		 {% for cat in post.category %}
-			 <a class="category" href="{{ page.url }}/#{{ cat | slugify }}">{{ cat }}</a>
+			 <a class="category" href="{{ page.url }}#{{ cat | slugify }}">{{ cat }}</a>
 		 {% endfor %}
 		 </h3>
 		 </li>
