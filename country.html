@@ -1,0 +1,32 @@
+---
+layout: default
+title: 	country
+---
+
+{% include catget.html %}
+
+{% comment %}
+=======================
+The purpose of this snippet is to list all your posts posted with a certain cat.
+=======================
+{% endcomment %}
+{% for cat in cats %}
+	<h2 id="{{ cat | slugify }}">{{ cat }}</h2>
+	<ul>
+	 {% for post in site.posts %}
+		 {% if post.category contains cat %}
+		 <li>
+		 <h3>
+		 <a href="{{ post.url }}">
+		 {{ post.title }}
+		 <small>{{ post.date | date_to_string }}</small>
+		 </a>
+		 {% for cat in post.category %}
+			 <a class="category" href="{{ site.baseurl }}{{ page.url }}#{{ cat | slugify }}">{{ cat }}</a>
+		 {% endfor %}
+		 </h3>
+		 </li>
+		 {% endif %}
+	 {% endfor %}
+	</ul>
+{% endfor %}
