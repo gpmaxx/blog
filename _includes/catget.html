@@ -1,20 +1,20 @@
-{% comment %}
-=======================
-The following part extracts all the categories from your posts and sort categories, so that you do not need to manually collect your categories to a place.
-=======================
-{% endcomment %}
+{% comment%}
+Here we generate all the categories.
+{% endcomment%}
+
 {% assign rawcats = "" %}
 {% for post in site.posts %}
 	{% assign tcats = post.category | join:'|' | append:'|' %}
 	{% assign rawcats = rawcats | append:tcats %}
 {% endfor %}
-{% assign rawcats = rawcats | split:'|' | sort %}
 
 {% comment %}
 =======================
 The following part removes dulpicated categories and invalid categories like blank category.
 =======================
 {% endcomment %}
+
+{% assign rawcats = rawcats | split:'|' | sort %}
 {% assign cats = "" %}
 {% for cat in rawcats %}
 	{% if cat != "" %}

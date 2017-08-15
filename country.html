@@ -2,34 +2,7 @@
 layout:   default
 title:    country
 ---
-{% comment%}
-Here we generate all the categories.
-{% endcomment%}
-
-{% assign rawcats = "" %}
-{% for post in site.posts %}
-	{% assign tcats = post.category | join:'|' | append:'|' %}
-	{% assign rawcats = rawcats | append:tcats %}
-{% endfor %}
-
-{% comment %}
-=======================
-The following part removes dulpicated categories and invalid tags like blank tag.
-=======================
-{% endcomment %}
-
-{% assign rawcats = rawcats | split:'|' | sort %}
-{% assign cats = "" %}
-{% for cat in rawcats %}
-	{% if cat != "" %}
-		{% if cats == "" %}
-			{% assign cats = cat | split:'|' %}
-		{% endif %}
-		{% unless cats contains cat %}
-			{% assign cats = cats | join:'|' | append:'|' | append:cat | split:'|' %}
-		{% endunless %}
-	{% endif %}
-{% endfor %}
+{% include catget.html %}
 
 
 {% comment %}
