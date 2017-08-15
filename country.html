@@ -3,11 +3,14 @@ layout: default
 title: 	country
 ---
 
+
 {% comment %}
 =======================
 The purpose of this snippet is to list all your posts posted with a certain cat.
 =======================
 {% endcomment %}
+
+{% include catget.html %}
 {% for cat in cats %}
 	<h2 id="{{ cat | slugify }}">{{ cat }}</h2>
 	<ul>
