@@ -154,6 +154,8 @@ img {
 
 .date {
   font-style: italic;
+  font-size: .75em;
+  
   color: $gray;
   vertical-align: baseline;
   margin: 1px;   	// cancel out the p margin which throws off alignment. Should be 0 but there's the stupid title to date alignment issue
@@ -308,8 +310,7 @@ nav {
   }
 
   .read-more {
-    text-transform: uppercase;
-    font-size: 1em;
+    font-size: .75em;
   }
 }
 
