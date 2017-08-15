@@ -9,6 +9,9 @@ layout: default
   <p class="date">
     Written: {{ page.date | date: '%b %e, %Y' }}
   </p>
+  <p>
+	{% include taglist.html %}
+  </p>
   
 	<div class="social">
 		<div class="fb-share-button" data-href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" data-layout="button" data-size="small" data-mobile-iframe="true">

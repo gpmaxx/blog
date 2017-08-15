@@ -3,6 +3,8 @@
   <head>
     <title>{{ site.name }} – {{ site.description }}{% if page.title %} - {{ page.title }}{% endif %}</title>
 
+	{% include tagget.html %}
+	{% include catget.html %}
     {% include meta.html %}
 
     <!--[if lt IE 9]>

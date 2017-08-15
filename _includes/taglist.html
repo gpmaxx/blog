@@ -1,0 +1,14 @@
+
+{% comment %}
+=======================
+It's expected that tagget is already included from parent 
+=======================
+{% endcomment %}
+
+<div class="tag-list">
+Tags:&nbsp;
+{% for tag in tags %}
+	<a class="tag" href="#{{ tag | slugify }}"> {{ tag }} </a>
+{% endfor %}
+</div>
+
