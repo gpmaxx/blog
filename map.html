@@ -74,18 +74,22 @@ title: map
         });
 		
 		if (!current) {
+			var image = '{{ site.baseurl }}/images/mapprevloc.png';
 			var marker = new google.maps.Marker({
 				position: geo,
 				title: name,
 				label: label,
+				icon: image
 			});
 			}
 		else {
+			var image = '{{ site.baseurl }}/images/mapcurrloc.png';
 			var marker = new google.maps.Marker({
 				position: geo,
 				title: name,
-				label: 'C',
-				map: map
+				label: 'C'
+				map: map,
+				icon: image
 			});
 		}
 		
