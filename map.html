@@ -1,3 +1,8 @@
+---
+layout: blank
+title: map
+---
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -33,7 +38,7 @@
 		
 		{% assign counter = 1 %}
 		{% for location in site.data.locations %}
-			addMarker(map,markers,{{ location.latc }},{{ location.longc }},'{{ counter }}',{{ location.name} });
+			addMarker(map,markers,{{ location.latc }},{{ location.longc }},'{{ counter }}',{{ location.name }});
 			{% assign counter = counter | plus: 1 %}
 		{% endfor %}
 		
