@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Marker Clustering</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+
+      function initMap() {
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 3,
+          center: {lat: -28.024, lng: 140.887}
+        });
+		
+		var markers = new Array();
+		
+		addMarker(map,markers,-31.563910,147.154312,'1','name');
+        addMarker(map,markers,-33.718234,150.363181,'2','name');
+        addMarker(map,markers,-33.727111,150.371124,'3','name');
+        addMarker(map,markers,-33.848588,151.209834,'4','name');
+        addMarker(map,markers,-33.851702,151.216968,'5','name');
+        addMarker(map,markers,-34.671264,150.863657,'6','name');
+        addMarker(map,markers,-35.304724,148.662905,'7','name');
+        addMarker(map,markers,-36.817685,175.699196,'8','name');
+        addMarker(map,markers,-36.828611,175.790222,'9','name');
+        addMarker(map,markers,-37.750000,145.116667,'10','name');
+        addMarker(map,markers,-37.759859,145.128708,'11','name');
+        addMarker(map,markers,-37.765015,145.133858,'12','name');
+        addMarker(map,markers,-37.770104,145.143299,'13','name');
+        addMarker(map,markers,-37.773700,145.145187,'14','name');
+        addMarker(map,markers,-37.774785,145.137978,'15','name');
+        addMarker(map,markers,-37.819616,144.968119,'16','name');
+        addMarker(map,markers,-38.330766,144.695692,'17','name');
+        addMarker(map,markers,-39.927193,175.053218,'18','name');
+        addMarker(map,markers,-41.330162,174.865694,'19','name');
+        addMarker(map,markers,-42.734358,147.439506,'20','name');
+        addMarker(map,markers,-42.734358,147.501315,'21','name');
+        addMarker(map,markers,-42.735258,147.438000,'22','name');
+        addMarker(map,markers,-43.999792,170.463352,'23','name');
+      
+		
+		// Add a marker clusterer to manage the markers.
+        var markerCluster = new MarkerClusterer(map, markers,{imagePath: 'images/m'});
+		}
+
+		function addMarker(map,markers,latc,longc,label,name) {
+			
+		var geo = {lat: latc, lng: longc};
+		var contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">' + name + '</h1>'+
+            '<div id="bodyContent">'+
+            '<p>Some text</p>'+
+            '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+            'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+            '(last visited June 22, 2009).</p>'+
+            '</div>'+
+            '</div>';
+		
+		var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+		
+		var marker = new google.maps.Marker({
+			position: geo,
+			title: name,
+			label: label
+		});
+		marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+		
+		markers.push(marker);
+		
+		
+		}
+		 
+  
+    </script>
+    <script src="scripts/markerclusterer.js">
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwHFD0Aoknao8NMZRXfUEllV84Xik370A&callback=initMap">
+    </script>
+  </body>
+</html>
