@@ -40,10 +40,9 @@ title: map
 		//{% assign counter = 1 %}
 		{% for location in site.data.locations %}
 			{% if forloop.last %}
-				createMarker(map,{{ location.latc }},{{ location.longc }},'{{ forloop.index }}','{{ location.name }}',true));
+				createMarker(map,{{ location.latc }},{{ location.longc }},'{{ forloop.index }}','{{ location.name }}',true);
 			{% else %}
 				markers.push(createMarker(map,{{ location.latc }},{{ location.longc }},'{{ forloop.index }}','{{ location.name }}',false));
-				//{% assign counter = counter | plus: 1 %}
 			{% endif %}
 		{% endfor %}
 		
@@ -86,7 +85,7 @@ title: map
 				position: geo,
 				title: name,
 				label: 'C',
-				map: map,
+				map: map
 		}
 		
 		marker.addListener('click', function() {
