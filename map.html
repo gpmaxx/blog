@@ -35,18 +35,27 @@ title: map
         });
 		
 		var markers = new Array();
+		var current;
 		
-		{% assign counter = 1 %}
+		//{% assign counter = 1 %}
 		{% for location in site.data.locations %}
-			addMarker(map,markers,{{ location.latc }},{{ location.longc }},'{{ counter }}','{{ location.name }}');
-			{% assign counter = counter | plus: 1 %}
+			{% if forloop.last %}
+				createMarker(map,{{ location.latc }},{{ location.longc }},'{{ forloop.index }}','{{ location.name }}',true));
+			{% else %}
+				markers.push(createMarker(map,{{ location.latc }},{{ location.longc }},'{{ forloop.index }}','{{ location.name }}',false));
+				//{% assign counter = counter | plus: 1 %}
+			{% endif %}
 		{% endfor %}
 		
 		// Add a marker clusterer to manage the markers.
         var markerCluster = new MarkerClusterer(map, markers,{imagePath: '{{ site.baseurl }}/images/m'});
 		}
+		
+		
+		
+		
 
-		function addMarker(map,markers,latc,longc,label,name) {
+		function createMarker(map,latc,longc,label,name,current) {
 			
 		var geo = {lat: latc, lng: longc};
 		var contentString = '<div id="content">'+
@@ -65,18 +74,27 @@ title: map
           content: contentString
         });
 		
-		var marker = new google.maps.Marker({
-			position: geo,
-			title: name,
-			label: label
-		});
+		if (!current) {
+			var marker = new google.maps.Marker({
+				position: geo,
+				title: name,
+				label: label,
+			});
+			}
+		else {
+			var marker = new google.maps.Marker({
+				position: geo,
+				title: name,
+				label: 'C',
+				map: map,
+		}
+		
 		marker.addListener('click', function() {
           infowindow.open(map, marker);
         });
 		
-		markers.push(marker);
-		
-		
+		return marker; 
+			
 		}
 		 
   
