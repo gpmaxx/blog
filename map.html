@@ -43,7 +43,7 @@ title: map
 		{% endfor %}
 		
 		// Add a marker clusterer to manage the markers.
-        var markerCluster = new MarkerClusterer(map, markers,{imagePath: 'images/m'});
+        var markerCluster = new MarkerClusterer(map, markers,{imagePath: '{{ site.baseurl }}/images/m'});
 		}
 
 		function addMarker(map,markers,latc,longc,label,name) {
