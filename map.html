@@ -38,7 +38,7 @@ title: map
 		
 		{% assign counter = 1 %}
 		{% for location in site.data.locations %}
-			addMarker(map,markers,{{ location.latc }},{{ location.longc }},'{{ counter }}',{{ location.name }});
+			addMarker(map,markers,{{ location.latc }},{{ location.longc }},'{{ counter }}','{{ location.name }}');
 			{% assign counter = counter | plus: 1 %}
 		{% endfor %}
 		
@@ -81,7 +81,7 @@ title: map
 		 
   
     </script>
-    <script src="scripts/markerclusterer.js">
+    <script src="{{ site.url }}scripts/markerclusterer.js">
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwHFD0Aoknao8NMZRXfUEllV84Xik370A&callback=initMap">
