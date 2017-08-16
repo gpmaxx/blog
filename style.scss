@@ -326,6 +326,12 @@ footer {
   text-align: center;
 }
 
+.gm-style-iw div * {
+    overflow: hidden !important;
+    line-height: 1.35em;
+}
+
+
 /* Pagination */
 
 .prev a,span {
@@ -363,6 +369,8 @@ footer {
 .next {
 	float: right;
 }
+
+
 
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

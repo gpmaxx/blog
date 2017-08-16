@@ -41,7 +41,7 @@ title: map
 		var current;
 		var infowindow = new google.maps.InfoWindow({
           content: 'Hello World',
-		  maxWidth: 200
+		  maxWidth: 250
 		});
 		
 		//{% assign counter = 1 %}
@@ -63,7 +63,7 @@ title: map
 		var contentString = '<div id="content"><div id="siteNotice"></div>'+
             '<h1 id="firstHeading" class="firstHeading"><a href="' + '{{ site.baseurl }}' +'/location/' + name + '" target="_blank">' + name + '</a></h1>'+
             '<div id="bodyContent">'+
-			'<p><a href="{{ site.baseurl }}/location' + name + '" class="date">Arrived: "' + date + '</a></p></div>'
+			'<p><a href="{{ site.baseurl }}/location' + name + '" class="date">Arrived: ' + date + '</a></p></div>'
             '</div>';
 		
 		if (!current) {
