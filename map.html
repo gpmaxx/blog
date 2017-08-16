@@ -60,8 +60,8 @@ title: map
 			
 		var geo = {lat: latc, lng: longc};
 		var contentString = '<div id="content"><div id="siteNotice"></div>'+
-            '<h1 id="firstHeading" class="firstHeading"><a href="{{ site.baseurl }}/location/' + name + '"></a></h1>'+
-            '<div id="bodyContent"><p>' + date + '</p></div>'
+            '<h1 id="firstHeading" class="firstHeading"><a href="' + '{{ site.baseurl }}' +'/location/' + name + '" target="_blank">' + name + '</a></h1>'+
+            '<div id="bodyContent"><p>Arrived: ' + date + '</p></div>'
             '</div>';
 		
 		if (!current) {
