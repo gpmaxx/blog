@@ -39,15 +39,16 @@ title: map
 		var markers = new Array();
 		var current;
 		var infowindow = new google.maps.InfoWindow({
-          content: 'Hello World'
+          content: 'Hello World',
+		  maxWidth: 200
 		});
 		
 		//{% assign counter = 1 %}
 		{% for location in site.data.locations %}
 			{% if forloop.last %}
-				createMarker(map,infowindow,{{ location.latc }},{{ location.longc }},'{{ forloop.index }}','{{ location.name }}',true);
+				createMarker(map,infowindow,{{ location.latc }},{{ location.longc }},'{{ forloop.index }}','{{ location.name }}','{{ location.date }}',true);
 			{% else %}
-				markers.push(createMarker(map,infowindow,{{ location.latc }},{{ location.longc }},'{{ forloop.index }}','{{ location.name }}',false));
+				markers.push(createMarker(map,infowindow,{{ location.latc }},{{ location.longc }},'{{ forloop.index }}','{{ location.name }}','{{ location.date }}',false));
 			{% endif %}
 		{% endfor %}
 		
@@ -55,28 +56,13 @@ title: map
         var markerCluster = new MarkerClusterer(map, markers,{imagePath: '{{ site.baseurl }}/images/m'});
 		}
 		
-		
-		
-		
-
-		function createMarker(map,infowindow,latc,longc,label,name,current) {
+		function createMarker(map,infowindow,latc,longc,label,name,date,current) {
 			
 		var geo = {lat: latc, lng: longc};
-		var contentString = '<div id="content">'+
-            '<div id="siteNotice">'+
-            '</div>'+
-            '<h1 id="firstHeading" class="firstHeading">' + name + '</h1>'+
-            '<div id="bodyContent">'+
-            '<p>Some text</p>'+
-            '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
-            'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
-            '(last visited June 22, 2009).</p>'+
-            '</div>'+
+		var contentString = '<div id="content"><div id="siteNotice"></div>'+
+            '<h1 id="firstHeading" class="firstHeading"><a href="{{ site.baseurl }}/location/' + name + '></a></h1>'+
+            '<div id="bodyContent"><p>' + date + '</p></div>'
             '</div>';
-		
-		/*var infowindow = new google.maps.InfoWindow({
-          content: contentString
-        });*/
 		
 		if (!current) {
 			var image = '{{ site.baseurl }}/images/mapprevloc.png';
