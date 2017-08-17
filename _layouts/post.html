@@ -10,7 +10,7 @@ layout: default
     Written: {{ page.date | date: '%b %e, %Y' }}
   </p>
 	<div class="tag-list">
-	T:&nbsp;
+	<p class="tag-header">Tags:</p> 
 	{% for tag in page.tags %}
 		<a class="tag" href="{{ site.baseurl }}/tags/#{{ tag | slugify }}"> {{ tag }} </a>
 	{% endfor %}
