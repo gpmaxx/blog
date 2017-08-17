@@ -169,11 +169,13 @@ img {
 
 .tag-header {
 	font-family: 'Kalam', sans-serif;
+	margin-top: 0;
 }
 
 .tag {
 	font-family: 'Kalam', sans-serif;
 	text-transform: lowercase;
+	color: $gray;
 }
 
 // Specify the color of the selection
