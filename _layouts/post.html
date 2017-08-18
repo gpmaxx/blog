@@ -12,8 +12,9 @@ layout: default
 	<div class="tag-list">
 	<p class="tag-header">Tags: 
 		{% for tag in page.tags %}
-			<a class="tag" href="{{ site.baseurl }}/tags/#{{ tag | slugify }}"> {{ tag }}</a>
+			<a class="tag" href="{{ site.baseurl }}/tags/#{{ tag | slugify }}"> {{ tag }}
 			{% unless forloop.last %},{% endunless %}
+			</a>
 		{% endfor %}
 	</p>
 </div>
