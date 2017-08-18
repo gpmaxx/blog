@@ -283,19 +283,19 @@ img {
   }
 }
 
-ul .nav {
+ul.nav {
 	list-style-type: none;
 	margin: 0;
-	paddding: 0;
+	padding: 0;
 	overflow: hidden;
 	background-color: #333333;
 }
 
-li .nav {
+li.nav {
 	float: left;
 }
 
-li .nav a {
+li.nav a {
 	display: block;
 	color: white;
 	text-align: center;
@@ -304,7 +304,7 @@ li .nav a {
 }
 
 
-li .nav a:hover {
+li.nav a:hover {
 	background-color: #111111;
 }
 
