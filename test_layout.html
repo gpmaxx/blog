@@ -1,37 +1,94 @@
----
-layout: default
-title: testing
----
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/w3/w3.css">
+<link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
 
-<!-- Sidebar -->
-<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
-  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
-  <a href="#" class="w3-bar-item w3-button">Link 1</a>
-  <a href="#" class="w3-bar-item w3-button">Link 2</a>
-  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+<head>
+	<style>
+    	.hamburger
+        {
+        	float: left;
+            margin-left: -1em;
+        }
+        
+        .mainsection
+        {
+        	margin-left: 10%;
+       	}
+    </style>
+</head>
+<body>
+
+<div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
+ <button class="w3-button w3-white w3-xlarge" onclick="w3_close()">☰</button>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-home fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Home</a>
+  <a href="./about/" onclick="w3_close()" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-user-circle fa-fw fa-lg" aria-hidden="true"></i>&nbsp; About</a>
+  <a href="./location/" onclick="w3_close()" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-map-marker fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Locations</a>
+  <a href="./tags/" onclick="w3_close()" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-tags fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Tags</a>
+  <a href="./map/" onclick="w3_close()" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-globe fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Map</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-at fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Social Media</a>
+  <a href="./credits/" onclick="w3_close()" class="w3-bar-item w3-button w3-border-bottom"><i class="fa fa-info-circle fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Credits</a>
 </div>
+ 
 
-<!-- Page Content -->
-<div class="w3-teal">
-  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
-  <div class="w3-container">
-    <h1>My Page</h1>
+<header class="w3-container">
+  <div class="hamburger">
+  	<button class="w3-button w3-white w3-xlarge" onclick="w3_open()">☰</button>
   </div>
+  <div class="mainsection w3-dark-grey">
+  	<h1>hello2</h1>
+  </div>
+</header>
+
+<div class="w3-container mainsection">
+  <p>Add the w3-border-bottom class to the links to create link dividers.</p>
+    <p>Add the w3-border-bottom class to the links to create link dividers.</p>
+      <p>Add the w3-border-bottom class to the links to create link dividers.</p>
+        <p>Add the w3-border-bottom class to the links to create link dividers.</p>
+          <p>Add the w3-border-bottom class to the links to create link dividers.</p>
+            <p>Add the w3-border-bottom class to the links to create link dividers.</p>
+              <p>Add the w3-border-bottom class to the links to create link dividers.</p>
+               <p>Add the w3-border-bottom class to the links to create link dividers.</p>
+    <p>Add the w3-border-bottom class to the links to create link dividers.</p>
+      <p>Add the w3-border-bottom class to the links to create link dividers.</p>
+        <p>Add the w3-border-bottom class to the links to create link dividers.</p>
+          <p>Add the w3-border-bottom class to the links to create link dividers.</p>
+            <p>Add the w3-border-bottom class to the links to create link dividers.</p>
+              <p>Add the w3-border-bottom class to the links to create link dividers.</p>
+               <p>Add the w3-border-bottom class to the links to create link dividers.</p>
+    <p>Add the w3-border-bottom class to the links to create link dividers.</p>
+      <p>Add the w3-border-bottom class to the links to create link dividers.</p>
+        <p>Add the w3-border-bottom class to the links to create link dividers.</p>
+          <p>Add the w3-border-bottom class to the links to create link dividers.</p>
+            <p>Add the w3-border-bottom class to the links to create link dividers.</p>
+              <p>Add the w3-border-bottom class to the links to create link dividers.</p>
+               <p>Add the w3-border-bottom class to the links to create link dividers.</p>
+    <p>Add the w3-border-bottom class to the links to create link dividers.</p>
+      <p>Add the w3-border-bottom class to the links to create link dividers.</p>
+        <p>Add the w3-border-bottom class to the links to create link dividers.</p>
+          <p>Add the w3-border-bottom class to the links to create link dividers.</p>
+            <p>Add the w3-border-bottom class to the links to create link dividers.</p>
+              <p>Add the w3-border-bottom class to the links to create link dividers.</p>
+               <p>Add the w3-border-bottom class to the links to create link dividers.</p>
+    <p>Add the w3-border-bottom class to the links to create link dividers.</p>
+      <p>Add the w3-border-bottom class to the links to create link dividers.</p>
+        <p>Add the w3-border-bottom class to the links to create link dividers.</p>
+          <p>Add the w3-border-bottom class to the links to create link dividers.</p>
+            <p>Add the w3-border-bottom class to the links to create link dividers.</p>
+              <p>Add the w3-border-bottom class to the links to create link dividers.</p>
 </div>
 
-<img src="img_car.jpg" alt="Car" style="width:100%">
-
-<div class="w3-container">
-<p>This sidebar is hidden by default, (style="display:none")</p>
-<p>You must click on the "hamburger" icon (top left) to open it.</p>
-<p>The sidebar will hide a part of the page content.</p>
 </div>
-
 <script>
 function w3_open() {
+	document.getElementById("mySidebar").style.width = "10%";
     document.getElementById("mySidebar").style.display = "block";
 }
 function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
 }
 </script>
+</body>
+</html>
