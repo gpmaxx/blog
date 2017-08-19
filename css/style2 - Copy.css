@@ -1,0 +1,35 @@
+.topbar {
+    float: left;
+    margin-left: -1em;
+}
+
+.hamburger {
+	border-left-width: 16px;
+	padding-left: 31px;
+}
+
+.headercontainer {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.headermainsection {
+	margin-left: 10%;
+	max-width: 80%;
+	padding-left: 0px;
+	background-color: #550000;
+}
+        
+.maincontainer {
+    margin-left: 10%;
+	max-width: 80%;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.footercontainer {
+	margin-left: 10%;
+	max-width: 80%;
+	padding-left: 0px;
+	background-color: #0000EE;
+}
