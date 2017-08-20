@@ -4,17 +4,17 @@ layout: default
 
 <article class="post">
 	
-  
-  <h1>{{ page.title }}</h1>
-  <p class="date">Written: {{ page.date | date: '%b %e, %Y' }}</p>
-  <p class="tag">Location: <a class="tag" href="{{ site.baseurl }}/location/{{ page.category | slugify }}">{{ page.category }}</a></p>
+  <div class="postHeader">
+	<h1>{{ page.title }}</h1>
+	<p class="date">Written: {{ page.date | date: '%b %e, %Y' }}</p>
+	<p class="tag">Location: <a class="tag" href="{{ site.baseurl }}/location/{{ page.category | slugify }}">{{ page.category }}</a></p>
 	<div class="tag-list">
-	<p class="tag-header">Tags: 
-		{% for tag in page.tags %}
-			<a class="tag" href="{{ site.baseurl }}/tags/#{{ tag | slugify }}"> {{ tag }}{% unless forloop.last %},{% endunless %}</a>
-		{% endfor %}
-	</p>
-</div>
+		<p class="tag-header">Tags: 
+			{% for tag in page.tags %}
+				<a class="tag" href="{{ site.baseurl }}/tags/#{{ tag | slugify }}"> {{ tag }}{% unless forloop.last %},{% endunless %}</a>
+			{% endfor %}
+		</p>
+	</div>
   
 	<div class="social">
 		<div class="fb-share-button" data-href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" data-layout="button" data-size="small" data-mobile-iframe="true">
@@ -22,7 +22,7 @@ layout: default
 		</div>
 		<a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false"></a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 	</div>
-  
+  </div>
   <div class="entry">
     {{ content }}
   </div>
@@ -49,8 +49,8 @@ layout: default
 		{% endif %}
 	</div>
 
-
-	
-	{% include disqus.html %}
-
 </article>
+	
+{% include disqus.html %}
+
+
