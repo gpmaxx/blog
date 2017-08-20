@@ -9,6 +9,7 @@ title: Greg's Safari Njema
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 	  <p class="date">Written: {{ post.date | date: '%b %e, %Y' }}</p>
+	  <p class="tag">Location: <a class="tag" href="{{ site.baseurl }}/location/{{ post.category | slugify }}">{{ post.category }}</a></p>
       <div class="entry">
         {{ post.excerpt }}
       </div>
