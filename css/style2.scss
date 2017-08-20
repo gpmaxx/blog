@@ -72,16 +72,6 @@ h4 {
 	font-size: 2vh;
 }
 
-.sidebar {
-	font-size: 2vh;
-	
-	&:link, &:visited, &:hover, &:active {
-		color: inherit;
-		font-size: 2vh;
-	}
-	
-}
-
 .entry {
 	font-size: 2vh;
 	
@@ -105,6 +95,10 @@ p.read-more, p.date, p.tag, p.tag-header, div.prev, div.next {
 
 .sidebar {
 	font-size: .9vw; 
+	
+	&:link, &:visited, &:hover, &:active {
+		color: inherit;
+	}
 }
 
 .headercontainer {
