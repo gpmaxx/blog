@@ -6,7 +6,7 @@
 body {
 	background: #FFFFFF;
 	font-family: 'Raleway', sans-serif;
-	font-size: 2vh;
+	font-size: 1.5vh;
 	color: #000000;
 	clear: both;
 	display: block;	
@@ -44,7 +44,6 @@ h1 > a:active {
 }
 
 
-
 h1 {
 	font-family: 'Kalam', sans-serif;
 	margin-top: 0px;
@@ -63,8 +62,8 @@ h4 {
 	font-size: 2vh;
 }
 
-p.read-more, p.date, p.tag-header {
-	font-size: 1.5vh;
+p.entry {
+	font-size: 2vh;
 }
 
 
