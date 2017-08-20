@@ -34,7 +34,7 @@
 
 <div class="sidebar w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
  <button class="hamburger w3-button w3-white w3-xlarge w3-hover-none" onclick="w3_close()">☰</button>
-  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-none"><i class="fa fa-home fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Home</a>
+  <a href="{{ site.baseurl }}" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-none"><i class="fa fa-home fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Home</a>
   <a href="{{ site.baseurl }}/about/" class="w3-bar-item w3-button w3-hover-none"><i class="fa fa-user-circle fa-fw fa-lg" aria-hidden="true"></i>&nbsp; About</a>
   <a href="{{ site.baseurl }}/location/" class="w3-bar-item w3-button w3-hover-none"><i class="fa fa-map-marker fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Locations</a>
   <a href="{{ site.baseurl }}/tags/" class="w3-bar-item w3-button w3-hover-none"><i class="fa fa-tags fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Tags</a>
@@ -49,7 +49,7 @@
   </div>
   <div class="headermainsection">
 	<div class="banner">
-		<img class="banner" src="{{ site.baseurl }}/images/banner.png" />
+		<a href="{{ site.baseurl }}"><img class="banner" src="{{ site.baseurl }}/images/banner.png" /></a>
 	</div>
   </div>
 </header>
