@@ -3,11 +3,11 @@ layout: default
 title: Credits
 ---
 
-### Site Development   
+### Development   
   
 **Built By:** 			    Greg Lipscomb  
 **Design Last Updated:** 	Aug 19, 2017  
-**Build Using:**		    [NotePad++](https://notepad-plus-plus.org/){:target="_blank"}, [GIMP](https://www.gimp.org/){:target="_blank"}
+**Build Using:**		    [NotePad++](https://notepad-plus-plus.org/){:target="_blank"}, [GIMP](https://www.gimp.org/){:target="_blank"}  
 **Site Repositories:**		[lipscomb.ca](https://github.com/gpmaxx/gpmaxx.github.io){:target="_blank"}, [lipscomb.ca/blog](https://github.com/gpmaxx/blog){:target="_blank"}
 
 ### Powered By  
@@ -20,17 +20,17 @@ title: Credits
 **Hosting:**	[GitHub](https://github.com/){:target="_blank"}     
 **Comments:**	[Disqus](https://disqus.com/){:target="_blank"}   
 
-### Site Theme
+### Theme
 
 Heavily adapted from [Jekyll-Now](https://github.com/barryclark/jekyll-now){:target="_blank"}  
 
-### Code Credits  
+### Code   
   
 Nagivation code adapted from [David Elbe](http://david.elbe.me/jekyll/2015/06/20/how-to-link-to-next-and-previous-post-with-jekyll.html){:target="_blank"}     
 Tag and category code adapted from [Zhihao Li (李志浩)](https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/){:target="_blank"}  under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/){:target="_blank"}   
 Style sheet components and navigation based on [w3shools.com](https://www.w3schools.com/w3css/w3css_downloads.asp){:target="_blank"} 
 
-### Icon Credits   
+### Icons 
 
 All colour icons adapted by Greg Lipscomb from available brand resources:    
 
@@ -46,13 +46,13 @@ All other icons (and related CSS) provided by [FontAwesome](http://fontawesome.i
 
 All brand icons are trademarks of their respective owners. 
 
-### Font Credits 
+### Fonts
 
 Fonts provides via [Google Fonts](https://fonts.google.com){:target="_blank"}    
 [Raleway](https://fonts.google.com/specimen/Raleway){:target="_blank"}   provided under [SIL Open Font License (web version)](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web){:target="_blank"}    
 [Kalam](https://fonts.google.com/specimen/Kalam){:target="_blank"}   by [Indian Type Foundry](https://www.indiantypefoundry.com/){:target="_blank"}   provided under [SIL Open Font License (web version)](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web){:target="_blank"}  
 
-### Map Credits
+### Map
 
 Powered by [Google Maps](https://www.google.com/maps){:target="_blank"} using [MarkerClusterer](https://github.com/googlemaps/v3-utility-library/tree/master/markerclusterer){:target="_blank"}
 
