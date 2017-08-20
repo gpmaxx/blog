@@ -96,6 +96,11 @@ p.read-more, p.date, p.tag, p.tag-header, div.prev, div.next {
 .sidebar {
 	font-size: .9vw; 
 	
+	
+}
+
+a.sidebar {
+
 	&:link, &:visited, &:hover, &:active {
 		color: inherit;
 	}
