@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 
 // change this is sass version
 h1 > a:link {
-	color: #inherit;
+	color: inherit;
 }
 
 h1 > a:visited {
@@ -36,11 +36,11 @@ h1 > a:visited {
 }
 
 h1 > a:hover {
-	color: #inherit;
+	color:inherit;
 }
 
 h1 > a:active {
-	color: #inherit;
+	color: inherit;
 }
 
 
