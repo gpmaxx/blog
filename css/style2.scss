@@ -62,7 +62,7 @@ h4 {
 	font-size: 2vh;
 }
 
-p.entry {
+div.entry {
 	font-size: 2vh;
 }
 
@@ -117,6 +117,45 @@ img.banner {
 article.post {
 	border-bottom: 1px solid #000;
 }
+
+/* Pagination */
+
+.prev a,span {
+	margin-top: 1em;
+}
+
+.next a,span { 
+	margin-top: 1em;
+}
+
+.arrow {
+	float: left;
+}
+
+.dir {	
+	float:left;
+}
+		
+.prev .title {
+	float:left;
+	
+	@include mobile {
+		display:none;
+    }
+}
+		
+.next .title {
+	float:left;
+	
+	@include mobile {
+		display: none; 
+    }
+}
+		
+.next {
+	float: right;
+}
+
 
 @import "svg-icons";
 
