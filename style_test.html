@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Style Test</title>
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway|Kalam:light" />
+	<!-- <link rel="stylesheet" type="text/css" href="/blog/css/style.css" /> -->
+    <link rel="stylesheet" type="text/css" href="./css/style2.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="./css/w3/w3.css" /> -->
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome-4.7.0/css/font-awesome.min.css" />
+	
+    <!-- Adapted from Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+  
+
+<div class="sidebar w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
+ <button class="hamburger w3-button w3-white w3-xlarge w3-hover-none" onclick="w3_close()">☰</button>
+  <a href="/blog" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-none"><i class="fa fa-home fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Home</a>
+  <a href="/blog/about/" class="w3-bar-item w3-button w3-hover-none"><i class="fa fa-user-circle fa-fw fa-lg" aria-hidden="true"></i>&nbsp; About</a>
+  <a href="/blog/location/" class="w3-bar-item w3-button w3-hover-none"><i class="fa fa-map-marker fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Locations</a>
+  <a href="/blog/tags/" class="w3-bar-item w3-button w3-hover-none"><i class="fa fa-tags fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Tags</a>
+  <a href="/blog/map/" class="w3-bar-item w3-button w3-hover-none"><i class="fa fa-globe fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Map</a>
+  <a href="http://lipscomb.ca" class="w3-bar-item w3-button w3-hover-none"><i class="fa fa-at fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Social</a>
+  <a href="/blog/credits/" class="w3-bar-item w3-button w3-hover-none"><i class="fa fa-info-circle fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Credits</a>
+</div>
+
+<header class="w3-container headercontainer">
+  <div class="topbar">
+  	<button class="hamburger w3-button w3-xlarge w3-hover-none" onclick="w3_open()">☰</button>
+  </div>
+  <div class="headermainsection">
+	<div class="banner">
+		<a href="/blog"><img class="banner" src="./images/banner.png" /></a>
+	</div>
+  </div>
+</header>
+
+<div class="w3-container maincontainer">
+
+	<h1>This is h1 header</h1>
+	<h1><a href="http://www.lipscomb.ca">This is a link in a header</a></h1>
+	<a href="http://www.lipscomb.ca"><h1>This is a header in a link</h1></a>
+	<h2>This is h2 header</h2>
+	<h3>This is h3 header</h3>
+	<h4>This is h4 header</h4>
+	
+	<p>This is something <strong>bolded</strong></p>
+	<p>This is something <i>italics w</i></p>
+	<p>This is <strong><i>both</i></strong></p>
+	
+	<hr>
+	<h1>This is what a post would be</h1>
+	<p class="tag-header">Tags: 
+			<a class="tag" href="/blog/tags/#food"> food</a>
+	</p>
+	<p class="date">Date: Aug 20, 2017</p>
+	<p class="entry">This is the paragraph. When I type alot it will wrap to another line  and I will need to see what the spacing is like.
+	We will also need to see what the spacing is like between differennt paragraphs.</p>
+	<p>I hope that things look nice. 
+	</p>
+	
+	<hr>
+
+	<p>This is a <a href="http://www.lipscomb.ca" target="_blank">link</a></p>
+	
+	<strong>Design Last Updated:</strong> 	Aug 19, 2017<br />
+<strong>Build Using:</strong>		    <a href="https://notepad-plus-plus.org/" target="_blank">NotePad++</a>, <a href="https://www.gimp.org/" target="_blank">GIMP</a><br />
+<strong>Site Repositories:</strong>		<a href="https://github.com/gpmaxx/gpmaxx.github.io" target="_blank">lipscomb.ca</a>, <a href="https://github.com/gpmaxx/blog" target="_blank">lipscomb.ca/blog</a></p>
+
+
+</div>
+
+<footer class="w3-container footercontainer">
+	<div>
+		<a href="https://youtube.com/channel/UCoP--yoNLIEuywh3392eX9g" target="_blank"><i class="svg-icon youtube"></i></a>
+<a href="https://www.twitter.com/gregssafari" target="_blank"><i class="svg-icon twitter"></i></a>
+<a href="https://instagram.com/_u/gregssafarinjema" target="_blank"><i class="svg-icon instagram"></i></a>
+<a href="https://www.linkedin.com/in/gregorylipscomb" target="_blank"><i class="svg-icon linkedin"></i></a>
+<a href="https://github.com/gpmaxx" target="_blank"><i class="svg-icon github" target="_blank"></i></a>
+<a href="mailto:g_lipscomb@hotmail.com"><i class="svg-icon email"></i></a>
+<a href="/blog/"><i class="svg-icon blog" target="_blank"></i></a>
+
+	</div>
+</footer>
+
+ <script>
+function w3_open() {
+	document.getElementById("mySidebar").style.width = "10vw";
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+
+
+  </body>
+</html>
