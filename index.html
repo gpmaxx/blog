@@ -6,11 +6,12 @@ title: Greg's Safari Njema
 <div class="posts">
   {% for post in paginator.posts %}
     <article class="post">
-
+	<div class="postHeader">
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 	  <p class="date">Written: {{ post.date | date: '%b %e, %Y' }}</p>
 	  <p class="tag">Location: <a class="tag" href="{{ site.baseurl }}/location/{{ post.category | slugify }}">{{ post.category }}</a></p>
-      <div class="entry">
+    </div>  
+	  <div class="entry">
         {{ post.excerpt }}
       </div>
 
