@@ -7,8 +7,7 @@ title: Credits
   
 **Built By:** 			    Greg Lipscomb  
 **Design Last Updated:** 	Aug 19, 2017  
-**Build Using:**		    [NotePad++](https://notepad-plus-plus.org/){:target="_blank"},[GIMP](https://www.gimp.org/){:target="_blank"}
-
+**Build Using:**		    [NotePad++](https://notepad-plus-plus.org/){:target="_blank"}, [GIMP](https://www.gimp.org/){:target="_blank"}
 
 ### Powered By  
   
@@ -40,7 +39,7 @@ All colour icons adapted by Greg Lipscomb from available brand resources:
 [LinkedIn](https://brand.linkedin.com/downloads){:target="_blank"},
 [GitHub](https://github.com/logos){:target="_blank"}  
 [Email](https://www.Vecteezy.com/){:target="_blank" rel="nofollow"} icon by [Vecteezy.com](https://www.Vecteezy.com/){:target="_blank"}  
-[Blog]http://www.freepik.com){:target="_blank"} icon made by [Freepik](http://www.freepik.com){:target="_blank"} from [Flaticon](www.flaticon.com){:target="_blank"} and is licensed by [CC 3.0](http://creativecommons.org/licenses/by/3.0/){:target="_blank"}  
+[Blog](http://www.freepik.com){:target="_blank"} icon made by [Freepik](http://www.freepik.com){:target="_blank"} from [Flaticon](www.flaticon.com){:target="_blank"} and is licensed by [CC 3.0](http://creativecommons.org/licenses/by/3.0/){:target="_blank"}  
 
 All other icons (and related CSS) provided by [FontAwesome](http://fontawesome.io){:target="_blank"}  under [SIL Open Font License](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL){:target="_blank"}  and [MIT License](https://opensource.org/licenses/mit-license.html){:target="_blank"}  
 

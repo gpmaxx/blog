@@ -89,11 +89,11 @@ p {
 }
 
 a {
-	//text-decoration: none;
+	text-decoration: none;
 	cursor: pointer;
-	color: $blue;
+	color: $gray;
 	&:hover, &:active, &:visited {
-		color: &blue;
+		color: $gray;
 	}
 }
 
@@ -403,5 +403,5 @@ footer {
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-@import "highlights";
+//@import "highlights";  // won't be using  code
 @import "svg-icons";
