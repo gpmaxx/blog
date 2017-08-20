@@ -26,7 +26,15 @@ h1, h2, h3, h4, h5, h6 {
 	color: #000000;
 }
 
-// change this is sass version
+h1 > a {
+
+	
+	&:link, &:visited, &:hover, &:active {
+		color: inherit;
+	}
+}
+
+/*
 h1 > a:link {
 	color: inherit;
 }
@@ -42,6 +50,8 @@ h1 > a:hover {
 h1 > a:active {
 	color: inherit;
 }
+
+*/
 
 
 h1 {
@@ -62,8 +72,19 @@ h4 {
 	font-size: 2vh;
 }
 
+.sidebar {
+	font-size: 2vh;
+	
+	&:link, &:visited, &:hover, &:active {
+		color: inherit;
+		font-size: 2vh;
+	}
+	
+}
+
 .entry {
 	font-size: 2vh;
+	
 }
 
 /*
