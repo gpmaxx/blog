@@ -28,19 +28,19 @@ Heavily adapted from [Jekyll-Now](https://github.com/barryclark/jekyll-now){:tar
   
 Nagivation code adapted from [David Elbe](http://david.elbe.me/jekyll/2015/06/20/how-to-link-to-next-and-previous-post-with-jekyll.html){:target="_blank"}     
 Tag and category code adapted from [Zhihao Li (李志浩)](https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/){:target="_blank"}  under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/){:target="_blank"}   
-Style sheet components and navigation based on [w3shools.com](https://www.w3schools.com/w3css/w3css_downloads.asp):target="_blank"} 
+Style sheet components and navigation based on [w3shools.com](https://www.w3schools.com/w3css/w3css_downloads.asp){:target="_blank"} 
 
 ### Icon Credits   
 
-All colour icons adapted by Greg Lipscomb from source resources:  
+All colour icons adapted by Greg Lipscomb from available brand resources:    
 
-**Youtube:**	[https://www.youtube.com/yt/about/brand-resources/](https://www.youtube.com/yt/about/brand-resources/){:target="_blank"}     
-**Twitter:**	[https://brand.twitter.com/en.html](https://brand.twitter.com/en.html){:target="_blank"}     
-**Instagram:**  [https://itunes.apple.com/us/app/instagram/id389801252?mt=8](https://itunes.apple.com/us/app/instagram/id389801252?mt=8){:target="_blank"}     
-**LinkedIn:**	[https://brand.linkedin.com/downloads](https://brand.linkedin.com/downloads){:target="_blank"}  
-**GitHub:**		[https://github.com/logos](https://github.com/logos){:target="_blank"}  
-**Email:**		[Vecteezy.com](https://www.Vecteezy.com/){:target="_blank" rel="nofollow"}   
-**Blog:**		Icon made by [Freepik](http://www.freepik.com){:target="_blank"} from [Flaticon](www.flaticon.com){:target="_blank"} and is licensed by [CC 3.0](http://creativecommons.org/licenses/by/3.0/){:target="_blank"}
+[Youtube](https://www.youtube.com/yt/about/brand-resources/){:target="_blank"},
+[Twitter](https://brand.twitter.com/en.html){:target="_blank"},
+[Instagram](https://itunes.apple.com/us/app/instagram/id389801252?mt=8){:target="_blank"},
+[LinkedIn](https://brand.linkedin.com/downloads){:target="_blank"},
+[GitHub](https://github.com/logos){:target="_blank"}  
+[Email](https://www.Vecteezy.com/){:target="_blank" rel="nofollow"} icon by [Vecteezy.com](https://www.Vecteezy.com/){:target="_blank"}  
+[Blog]http://www.freepik.com){:target="_blank"} icon made by [Freepik](http://www.freepik.com){:target="_blank"} from [Flaticon](www.flaticon.com){:target="_blank"} and is licensed by [CC 3.0](http://creativecommons.org/licenses/by/3.0/){:target="_blank"}  
 
 All other icons (and related CSS) provided by [FontAwesome](http://fontawesome.io){:target="_blank"}  under [SIL Open Font License](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL){:target="_blank"}  and [MIT License](https://opensource.org/licenses/mit-license.html){:target="_blank"}  
 
