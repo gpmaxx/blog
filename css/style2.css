@@ -124,6 +124,13 @@ div.sidebar > a {
 
 */
 
+.articleDetailsList {
+	list-style-type: none;
+}
+
+.articleDetail {
+		display: inline;
+}
 
 .headermainsection {
 	margin: 1vh 0vw 1vh 10vw;
