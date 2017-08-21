@@ -128,7 +128,7 @@ div.sidebar > a {
 	list-style-type: none
 }
 
-.articleDetails li, .articleDetials * div {
+.articleDetails li, .articleDetails div {
 	display: inline;
 }
 
