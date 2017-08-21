@@ -154,6 +154,7 @@ img.banner {
 
 .post:last-of-type {
 	border-bottom: 1px solid #000;
+	margin-bottom: 0vh;
 }
 
 .postHeader {
@@ -167,6 +168,7 @@ img.banner {
 .PageNavigation {
 	margin-bottom: 1vh;
 	background: #ddd;
+	border-bottom: 1px solid #000000;
 }
 
 .prev a,span {
