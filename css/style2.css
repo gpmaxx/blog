@@ -154,7 +154,7 @@ img.banner {
 	border-top: 1px solid #000;
 }
 
-.post:last-child {
+.posts > .post:last-child {
 	border-bottom: 1px solid #000;
 }
 
