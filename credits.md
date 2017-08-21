@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Credits
+footer: true
 ---
 
 ### Development   
