@@ -4,7 +4,7 @@ layout: default
 
 <article class="post">
 	
-  <div class="postHeader">
+  <div class="postHeader clearfix">
 	<h1>{{ page.title }}</h1>
 	<p class="date">Written: {{ page.date | date: '%b %e, %Y' }}</p>
 	<p class="tag">Location: <a class="tag" href="{{ site.baseurl }}/location/{{ page.category | slugify }}">{{ page.category }}</a></p>
@@ -32,7 +32,7 @@ layout: default
    <!-- The notion of previous and next between pages and pagnation is opposite. So to align them the if is refersed
    for pagination getting the previous page gets newer postings. But for page. Getting previous gets older postings. -->
 
-	<div class="PageNavigation">
+	<div class="PageNavigation clearfix">
 		{% if page.next.url %}
 		<div class="prev">
 			<a href="{{ site.baseurl }}{{page.next.url}}" class="arrow">&laquo;&nbsp;</a>

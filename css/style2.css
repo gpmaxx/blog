@@ -104,7 +104,7 @@ p.tag, p.tag-header, p.read-more, p.next, p.prev, p.date {
 
 .hamburger {
 	padding: 0px!Important;
-	margin: 1vw;
+	margin-left: 1vw;
 }
 
 a.sidebar {
@@ -123,7 +123,7 @@ a.sidebar {
 
 
 .headermainsection {
-	margin-left: 10vw;
+	margin: 1vh ovw 1vh 10vw;
 	width: 80vw;
 	padding: 0vw;
 }
@@ -149,7 +149,6 @@ img.banner {
 }
 
 .post {
-	margin-top: 1vh;
 	margin-bottom: 1vh;
 	border-top: 1px solid #000;
 }
@@ -223,6 +222,18 @@ img.banner {
 
 .fb-share-button {
 	vertical-align: top;
+}
+
+// Nicolas Gallagher's micro clearfix hack
+// http://nicolasgallagher.com/micro-clearfix-hack/
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
 }
 
 
