@@ -15,9 +15,9 @@ The purpose of this snippet is to list all your posts posted with a certain tag.
 	 {% for post in site.posts %}
 		 {% if post.tags contains tag %}
 			<p>
-				<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-				<div class="date">Written: {{ page.date | date: '%b %e, %Y' }}</p></li>
-				<div class="tag-header">Location: <a class="tag" href="{{ site.baseurl }}/location/{{ post.category  | slugify }}">{{ post.category | slugify }}</a></div></li>
+				<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+				<div class="date">Written: {{ page.date | date: '%b %e, %Y' }}</div>
+				<div class="tag-header">Location: <a class="tag" href="{{ site.baseurl }}/location/{{ post.category  | slugify }}">{{ post.category | slugify }}</a></div>
 				<div class="tag-list">
 					<div class="tag-header">Tags:
 						{% for tag in post.tags %}
