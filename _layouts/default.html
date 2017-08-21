@@ -56,6 +56,12 @@
 
 <div class="maincontainer">
 	{{ content }}
+	
+	{% if page.footer %}
+		<div class="footerbar clearfix">
+			&nbsp;
+		</div>
+	{% endif %}
 </div>
 
 <!-- 
@@ -67,11 +73,7 @@
 
 -->
 
-{% if page.footer %}
-	<div class="footerbar clearfix">
-		&nbsp;
-	</div>
-{% endif %}
+
 
  <script>
 function w3_open() {
