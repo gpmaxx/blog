@@ -129,7 +129,7 @@ a.sidebar {
 }
         
 .maincontainer {
-    margin-left: 10vw;
+	margin: 1vh 0vh 1vh 10vw;
 	max-width: 80vw;
 	
 }
@@ -149,7 +149,6 @@ img.banner {
 }
 
 .post {
-	margin-top: 1vh;
 	margin-bottom: 1vh;
 	border-top: 1px solid #000;
 }
@@ -165,6 +164,10 @@ img.banner {
 }
 
 /* Pagination */
+
+.PageNavigation {
+	margin-bottom: 1vh;
+}
 
 .prev a,span {
 	margin-top: 1vh;
@@ -200,6 +203,14 @@ img.banner {
 		
 .next {
 	float: right;
+}
+
+.twitter-share-button {
+	vertical-align: top;
+}
+
+.fb-share-button {
+	vertical-align: top;
 }
 
 
