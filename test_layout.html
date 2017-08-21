@@ -1,55 +1,124 @@
+
 <!DOCTYPE html>
 <html>
-
-
-<head>
-	<title>W3.CSS</title>
+  <head>
+    <title>Greg's Safari Njema – Notes from the road - Test Post 7</title>
+  
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="./css/w3/w3.css">
-	<link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="./css/style2.css">
-</head>
-<body>
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway|Kalam:light" />
+	<!-- <link rel="stylesheet" type="text/css" href="/blog/css/style.css" /> -->
+    <link rel="stylesheet" type="text/css" href="./css/style2.css" />
+	<link rel="stylesheet" type="text/css" href="./css/w3/w3.css" />
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome-4.7.0/css/font-awesome.min.css" />
+	
+    <link rel="alternate" type="application/rss+xml" title="Greg's Safari Njema - Notes from the road" href="/blog/feed.xml" />
+
+    <!-- Adapted from Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+  <div id="fb-root"></div>
+
 
 <div class="sidebar w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
- <button class="hamburger w3-button w3-white w3-xlarge w3-hover-none" onclick="w3_close()">☰</button>
-  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-none"><i class="fa fa-home fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Home</a>
-  <a href="./about/" class="w3-bar-item w3-button w3-hover-none"><i class="fa fa-user-circle fa-fw fa-lg" aria-hidden="true"></i>&nbsp; About</a>
-  <a href="./location/" class="w3-bar-item w3-button w3-hover-none"><i class="fa fa-map-marker fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Locations</a>
-  <a href="./tags/" class="w3-bar-item w3-button w3-hover-none"><i class="fa fa-tags fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Tags</a>
-  <a href="./map/" class="w3-bar-item w3-button w3-hover-none"><i class="fa fa-globe fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Map</a>
-  <a href="#" class="w3-bar-item w3-button w3-hover-none"><i class="fa fa-at fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Social</a>
-  <a href="./credits/" class="w3-bar-item w3-button w3-hover-none"><i class="fa fa-info-circle fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Credits</a>
+ <button class="hamburger w3-button  w3-white w3-xlarge w3-hover-none" onclick="w3_close()">☰</button>
+  <a href="/blog" onclick="w3_close()" class="w3-bar-item w3-hover-none"><i class="fa fa-home fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Home</a>
+  <a href="/blog/about/" class="w3-bar-item w3-hover-none"><i class="fa fa-user-circle fa-fw fa-lg" aria-hidden="true"></i>&nbsp; About</a>
+  <a href="/blog/location/" class="w3-bar-item w3-hover-none"><i class="fa fa-map-marker fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Locations</a>
+  <a href="/blog/tags/" class="w3-bar-item w3-hover-none"><i class="fa fa-tags fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Tags</a>
+  <a href="/blog/map/" class="w3-bar-item w3-hover-none"><i class="fa fa-globe fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Map</a>
+  <a href="http://lipscomb.ca" class="w3-bar-item w3-hover-none"><i class="fa fa-at fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Social</a>
+  <a href="/blog/credits/" class="w3-bar-item w3-hover-none"><i class="fa fa-info-circle fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Credits</a>
 </div>
- 
 
-<header class="w3-container headercontainer">
+<header class="headercontainer">
   <div class="topbar">
   	<button class="hamburger w3-button w3-xlarge w3-hover-none" onclick="w3_open()">☰</button>
   </div>
   <div class="headermainsection">
 	<div class="banner">
-		<img class="banner" src="./images/banner.png" />
+		<a href="/blog"><img class="banner" src="./images/banner.png" alt="banner" title="Greg's Safari Njema" /></a>
 	</div>
   </div>
 </header>
 
-<div class="w3-container maincontainer">
+<div class="maincontainer">
 	<article class="post">
-		<p>some stuff</p>
-	</article>
-	<article class="post">
-		<p>some stuff</p>
-	</article>
+	
+  <div class="postHeader">
+	<h1>Test Post 7</h1>
+	<p class="date">Written: Aug  7, 2017</p>
+	<p class="tag">Location: <a class="tag" href="/blog/location/thailand">thailand</a></p>
+	<div class="tag-list">
+		<p class="tag-header">Tags: 
+			
+				<a class="tag" href="/blog/tags/#muaythai"> muaythai</a>
+			
+		</p>
+	</div>
+  
+
+  </div>
+  <div class="entry">
+    <p>This is a test post to fill the DB - Test 7. I need to write more so as to wrap to the next line. It will be very fun to finally 
+	Get all this shit done. Here is a <a href="http://www.lipscomb.ca/">link</a> to test things out with. Here is some more text in order to go to thead
+	next line and create a paragraph spacing is important. Fuck CSS</p>
+	<p>This is the second paragraph to test things further. </p>
+
+  </div>
+	
+  
+
+   <!-- The notion of previous and next between pages and pagnation is opposite. So to align them the if is refersed
+   for pagination getting the previous page gets newer postings. But for page. Getting previous gets older postings. -->
+
+	<div class="PageNavigation">
+		
+		<div class="prev">
+			<a href="/blog/20170807/Test8/" class="arrow">&laquo;&nbsp;</a>
+			<a href="/blog/20170807/Test8/" class="dir">Newer</a>
+			<a href="/blog/20170807/Test8/" class="title">: Test Post 8</a>
+		</div>
+		
+		
+		<div class="next">
+			<a href="/blog/20170807/Test6/" class="dir">Older</a>
+			<a href="/blog/20170807/Test6/" class="title">: Test Post 6</a>
+			<a href="/blog/20170807/Test6/" class="arrow">&nbsp;&raquo;</a>
+		</div>
+		
+	</div>
+
+</article>
+	
+
+
+
+
 </div>
 
+<!-- 
 <footer class="w3-container footercontainer">
 	<div>
-		<p>This is the footer</p>
+		<a href="https://youtube.com/channel/UCoP--yoNLIEuywh3392eX9g" target="_blank"><i class="svg-icon youtube" alt="youtube" title="youtube"></i></a>
+<a href="https://www.twitter.com/gregssafari" target="_blank"><i class="svg-icon twitter" alt="twitter" title="twitter"></i></a>
+<a href="https://instagram.com/_u/gregssafarinjema" target="_blank"><i class="svg-icon instagram" alt="instagram" title="instagram"></i></a>
+<a href="https://www.linkedin.com/in/gregorylipscomb" target="_blank"><i class="svg-icon linkedin" alt="linkedin" title="linkedin"></i></a>
+<a href="https://github.com/gpmaxx" target="_blank"><i class="svg-icon github" target="_blank" alt="github" title="github"></i></a>
+<a href="mailto:g_lipscomb@hotmail.com"><i class="svg-icon email" alt="email" title="email"></i></a>
+<a href="/blog/"><i class="svg-icon blog" target="_blank" alt="blog" title="blog"></i></a>
+
 	</div>
 </footer>
 
-<script>
+-->
+
+ <script>
 function w3_open() {
 	document.getElementById("mySidebar").style.width = "10vw";
     document.getElementById("mySidebar").style.display = "block";
@@ -58,5 +127,10 @@ function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
 }
 </script>
-</body>
+
+    
+
+
+
+  </body>
 </html>
