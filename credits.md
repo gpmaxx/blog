@@ -32,8 +32,7 @@ Style sheet components and navigation based on [w3shools.com](https://www.w3scho
 
 ### Icons 
 
-All colour icons adapted by Greg Lipscomb from available brand resources:    
-
+All colour icons adapted by Greg Lipscomb from available brand resources:
 [Youtube](https://www.youtube.com/yt/about/brand-resources/){:target="_blank"},
 [Twitter](https://brand.twitter.com/en.html){:target="_blank"},
 [Instagram](https://itunes.apple.com/us/app/instagram/id389801252?mt=8){:target="_blank"},

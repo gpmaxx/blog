@@ -22,6 +22,10 @@ a:link, a:visited, a:hover, a:active {
 	color: #666;
 }
 
+div.sidebar {
+	font-size; 1.5vh;
+}
+
 div.sidebar a:link { 
 	color: inherit;
 }
@@ -41,6 +45,8 @@ div.sidebar a:active {
 h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
 	color: #000000;
+	margin-bottom: 1vh;
+	margin-top: 1.5vh;
 }
 
 
@@ -88,11 +94,12 @@ p {
 	margin-bottom: 1vh;
 }
 
-p.tag, p.tag-header, p.read-more, p.next, p.prev, p.date {
+p.tag, p.tag-header, div.tag-header, p.read-more, p.date, div.date {
 	margin-bottom: 0vh;
 	font-size: 1.5vh;
 	line-height: 1.8vh;
 }
+
 
 .topbar {
     float: left;
@@ -103,7 +110,7 @@ p.tag, p.tag-header, p.read-more, p.next, p.prev, p.date {
 	margin-left: 1vw;
 }
 
-a.sidebar {
+div.sidebar > a {
 	font-size: .9vw;
 	margin: .5vh 0vh .5vh 1vh;
 }
@@ -167,6 +174,7 @@ img.banner {
 	background: #ddd;
 	border-bottom: 1px solid #000000;
 	padding-bottom: .6vh;
+	font-size: 1.5vh;
 }
 
 .prev a,span {
