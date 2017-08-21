@@ -123,7 +123,7 @@ a.sidebar {
 
 
 .headermainsection {
-	margin: 1vh ovw 1vh 10vw;
+	margin: 1vh 0vw 1vh 10vw;
 	width: 80vw;
 	padding: 0vw;
 }
@@ -167,6 +167,7 @@ img.banner {
 
 .PageNavigation {
 	margin-bottom: 1vh;
+	background: #ddd;
 }
 
 .prev a,span {
