@@ -163,10 +163,13 @@ img.banner {
 	border-top: 1px solid #000;
 }
 
+/*
 .post:last-of-type {
 	border-bottom: 1px solid #000;
 	margin-bottom: 0vh;
 }
+
+*/
 
 .postHeader {
 	margin-bottom: 1vh;
@@ -177,7 +180,7 @@ img.banner {
 /* Pagination */
 
 .footerbar {
-	margin-top: 1vh;
+	//margin-top: 1vh;
 	margin-bottom: 1vh;
 	background: #ddd;
 	border-top: 1px solid #000000;
