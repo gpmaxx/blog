@@ -123,13 +123,13 @@ a.sidebar {
 
 
 .headermainsection {
-	margin-left: 10vw;
+	margin-left: 1vh 0vh 1vh 10vw;
 	width: 80vw;
 	padding: 0vw;
 }
         
 .maincontainer {
-	margin: 1vh 0vh 1vh 10vw;
+    margin-left: 10vw;
 	max-width: 80vw;
 	
 }
@@ -167,6 +167,7 @@ img.banner {
 
 .PageNavigation {
 	margin-bottom: 1vh;
+	overflow: hidden;
 }
 
 .prev a,span {
@@ -205,8 +206,19 @@ img.banner {
 	float: right;
 }
 
+.social {
+	float: left;
+	display: inline-block;
+	margin-top: .25em;
+	margin-bottom: 1.5em;
+}
+
 .twitter-share-button {
 	vertical-align: top;
+}
+
+.fb_iframe_widget span {
+	margin-top: 0;
 }
 
 .fb-share-button {
