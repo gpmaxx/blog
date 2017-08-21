@@ -16,14 +16,12 @@ The purpose of this snippet is to list all your posts posted with a certain tag.
 		 {% if post.tags contains tag %}
 			<ul style="list-style-type: none">
 				<li style="display:inline"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-				<li style="display:inline"><div class="date">Written: {{ page.date | date: '%b %e, %Y' }}</div></li>
-				<li style="display:inline"><div class="tag-header">Location: <a class="tag" href="{{ site.baseurl }}/location/{{ post.category  | slugify }}">{{ post.category | slugify }}</a></div></li>
-				<li style="display:inline"><div class="tag-list">
-						<div class="tag-header">Tags:
+				<li style="display:inline">Written: {{ page.date | date: '%b %e, %Y' }}</li>
+				<li style="display:inline">Location: <a class="tag" href="{{ site.baseurl }}/location/{{ post.category  | slugify }}">{{ post.category | slugify }}</a></li>
+				<li style="display:inline">
 						{% for tag in post.tags %}
 								<a class="tag" href="{{ site.baseurl }}{{ page.url }}#{{ tag | slugify }}">{{ tag }}{% unless forloop.last %},{% endunless %}</a>
-							{% endfor %}
-						</div>
+						{% endfor %}
 				</li>
 			</ul>
 		 {% endif %}
