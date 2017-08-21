@@ -124,12 +124,12 @@ div.sidebar > a {
 
 */
 
-.articleDetailsList {
-	list-style-type: none;
+.articleDetails {
+	list-style-type: none
 }
 
-.articleDetail {
-		display: inline;
+.articleDetails p, .articleDetials div {
+	display: inline;
 }
 
 .headermainsection {
