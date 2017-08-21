@@ -89,7 +89,6 @@ h4 {
 	line-height: 2.2vh;
 }
 
-
 p {
 	margin-bottom: 1vh;
 }
@@ -207,10 +206,7 @@ img.banner {
 }
 
 .social {
-	float: left;
-	display: inline-block;
-	margin-top: .25em;
-	margin-bottom: 1.5em;
+	margin-top: .2vh
 }
 
 .twitter-share-button {
@@ -225,17 +221,11 @@ img.banner {
 	vertical-align: top;
 }
 
-// Nicolas Gallagher's micro clearfix hack
-// http://nicolasgallagher.com/micro-clearfix-hack/
-.clearfix:before,
 .clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
+			display:block;
+			clear:both;
+			content:'';
+		}
 
 
 

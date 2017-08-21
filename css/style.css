@@ -135,7 +135,10 @@ img {
 }
 
 .social {
-	margin-bottom: .2vh;
+		float: left;
+	display: inline-block;
+	margin-top: .25em;
+	margin-bottom: 1.5em;
 }
 
 .twitter-share-button {
