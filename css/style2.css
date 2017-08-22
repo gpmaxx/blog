@@ -258,16 +258,13 @@ img.banner {
 	height: 70vh;
 }
 
-	.locationData 
-{
-    white-space: nowrap;
-    width: 100%;
-}
-
-.locationData > div
-{
-    display: inline-block;
-    vertical-align: top;
-    white-space: normal;
-    width: 50%;
-}
+.locationData {
+			display:table;
+			width: 100%;
+		}
+		
+		.locationCell {
+			display:table-cell;
+			width: 50%;
+			word-break: break-all;
+		}
