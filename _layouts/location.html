@@ -5,10 +5,30 @@ footer: true
 
 {% include catget.html %}
 
-<h3>Viewing posts related to: {{ page.title }}</h3>
+<h3>Viewing posts related to: {{ page.title }}
 
 {% for c in cats %}
 	{% if c != page.title %}
-		c
+		,<a href="{{ site.baseurl }}/location/{{ c }}">{{ c }}</a>
 	{% endif %}
+{% endfor %}
+</h3>
+
+{% unless site.categories.[page.category] | size > 0 %}
+  <p>No posts in this category at this time.</p>
+{% endunless %}
+
+{% for post in site.categories.[page.category] %}
+   <article class="post">
+	<div class="postHeader">
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+	  <p class="date">Written: {{ post.date | date: "%b %e, %Y" }}</p>
+	  <p class="tag">Location: <a class="tag" href="{{ site.baseurl }}/location/{{ post.category | slugify }}">{{ post.category }}</a></p>
+	</div>
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <p class="read-more"><a href="{{ site.baseurl }}{{ post.url }}">[Continue Reading]</a><p>
+    </article>
 {% endfor %}
