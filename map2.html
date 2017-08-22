@@ -4,35 +4,112 @@ title: map
 footer: true
 ---
 <div class="locationData">
-    <div class="w3-red">{% include catget.html %}
+    <div>
+	{% include catget.html %}
 
-{% comment %}
-=======================
-The purpose of this snippet is to list all your posts posted with a certain tag.
-=======================
-{% endcomment %}
+	{% comment %}
+	=======================
+	The purpose of this snippet is to list all your posts posted with a certain tag.
+	=======================
+	{% endcomment %}
 
-{% for cat in cats %}
-	<h2 id="{{ cat | slugify }}">{{ cat }}</h2>
-	 {% for post in site.posts %}
-		 {% if post.category contains cat %}
-			<ul class="articleDetails">
-				<li><div class="title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></div></li>
-				<li><div class="date"> - Written: {{ post.date | date: '%b %e, %Y' }}</div></li>
-				<li><div class="tag-header">Location: <a class="tag" href="{{ site.baseurl }}/location/{{ post.category  | slugify }}">{{ post.category | slugify }}</a></div></li>
-				<li>
-					<div class="tag-list">
-						<div class="tag-header">Tags:
-						{% for tag in post.tags %}
-								<a class="tag" href="{{ site.baseurl }}{{ page.url }}#{{ tag | slugify }}">{{ tag }}{% unless forloop.last %},{% endunless %}</a>
-							{% endfor %}
+	{% for cat in cats %}
+		<h2 id="{{ cat | slugify }}">{{ cat }}</h2>
+		{% for post in site.posts %}
+			{% if post.category contains cat %}
+				<ul class="articleDetails">
+					<li><div class="title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></div></li>
+					<li><div class="date"> - Written: {{ post.date | date: '%b %e, %Y' }}</div></li>
+					<li><div class="tag-header">Location: <a class="tag" href="{{ site.baseurl }}/location/{{ post.category  | slugify }}">{{ post.category | slugify }}</a></div></li>
+					<li>
+						<div class="tag-list">
+							<div class="tag-header">Tags:
+								{% for tag in post.tags %}
+									<a class="tag" href="{{ site.baseurl }}{{ page.url }}#{{ tag | slugify }}">{{ tag }}{% unless forloop.last %},{% endunless %}</a>
+								{% endfor %}
+							</div>
 						</div>
-					</div>
-				</li>
-			</ul>
-		 {% endif %}
-	 {% endfor %}
-{% endfor %}
+						</li>
+				</ul>
+			{% endif %}
+		{% endfor %}
+	{% endfor %}
+	</div>
+    <div><div id="map"></div></div>
 </div>
-    <div class="w3-blue">Right</div>
-</div>
+
+<script>
+	 
+		
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 3,
+          center: {lat: -28.024, lng: 140.887}
+        });
+		
+		var markers = new Array();
+		var current;
+		var infowindow = new google.maps.InfoWindow({
+          content: 'Hello World',
+		  maxWidth: 250
+		});
+		
+		//{% assign counter = 1 %}
+		{% for location in site.data.locations %}
+			{% if forloop.last %}
+				createMarker(map,infowindow,{{ location.latc }},{{ location.longc }},'{{ forloop.index }}','{{ location.name }}','{{ location.date }}',true);
+			{% else %}
+				markers.push(createMarker(map,infowindow,{{ location.latc }},{{ location.longc }},'{{ forloop.index }}','{{ location.name }}','{{ location.date }}',false));
+			{% endif %}
+		{% endfor %}
+		
+		// Add a marker clusterer to manage the markers.
+        var markerCluster = new MarkerClusterer(map, markers,{imagePath: '{{ site.baseurl }}/images/m'});
+		}
+		
+		function createMarker(map,infowindow,latc,longc,label,name,date,current) {
+			
+		var geo = {lat: latc, lng: longc};
+		var contentString = '<div id="content"><div id="siteNotice"></div>'+
+            '<h1 id="firstHeading" class="firstHeading"><a href="' + '{{ site.baseurl }}' +'/location/' + name + '" target="_blank">' + name + '</a></h1>'+
+            '<div id="bodyContent">'+
+			'<p><a href="{{ site.baseurl }}/location/' + name + '" class="date" target="_blank">Arrived: ' + date + '</a></p></div>'
+            '</div>';
+		
+		if (!current) {
+			var image = '{{ site.baseurl }}/images/mapprevloc.png';
+			var marker = new google.maps.Marker({
+				position: geo,
+				title: name,
+				label: label,
+				icon: image
+			});
+			}
+		else {
+			var image = '{{ site.baseurl }}/images/mapcurrloc.png';
+			var marker = new google.maps.Marker({
+				position: geo,
+				title: name,
+				map: map,
+				icon: image
+			});
+		}
+		
+		marker.addListener('click', function() {
+		  if (infowindow) {infowindow.close()};
+		  infowindow.setContent(contentString);
+          infowindow.open(map, marker);
+		  
+        });
+		
+		return marker; 
+			
+		}
+		 
+  
+    </script>
+    <script src="{{ site.baseurl }}/scripts/markerclusterer.js">
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwHFD0Aoknao8NMZRXfUEllV84Xik370A&callback=initMap">
+    </script>
