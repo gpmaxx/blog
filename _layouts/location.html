@@ -13,8 +13,7 @@ footer: true
   <p>No posts in this category at this time.</p>
 {% endunless %}
 
-{% assign cats = site.categories | slugify %}
-{% for post in cats[post.category] %}
+{% for post in site.categories.[page.category] %}
    <article class="post">
 	<div class="postHeader">
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
@@ -27,4 +26,4 @@ footer: true
 
       <p class="read-more"><a href="{{ site.baseurl }}{{ post.url }}">[Continue Reading]</a><p>
     </article>
-% endfor %}
+{% endfor %}
