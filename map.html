@@ -5,7 +5,7 @@ footer: true
 ---
 
 	<div width="100%">
-		<p>Last logged location: {{ site.data.locations | last }}</p>
+		<p>Last logged location: {{ site.data.locations.name | last }}</p>
 	</div>
 	<div id="mapholder">
 		<div id="map"></div>
@@ -13,7 +13,7 @@ footer: true
 	<script>
 	 
 		
-		var map;
+		var map = new object();
 		
 		var markers = new Array();
 		var current;
