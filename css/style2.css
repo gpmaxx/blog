@@ -257,3 +257,17 @@ img.banner {
 	width: 80vw;
 	height: 70vh;
 }
+
+	.locationData 
+{
+    white-space: nowrap;
+    width: 100%;
+}
+
+.locationData > div
+{
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+    width: 50%;
+}
