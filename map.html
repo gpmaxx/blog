@@ -6,7 +6,7 @@ footer: true
 
 	<div width="100%">
 		{% assign loc = site.data.locations | last %}
-		<p>Last logged location: <a href="#" onclick="moveToLocation({{ loc.latc }},{{ loc.longc }},window.defaultZoom)">{{ loc.name }}</a></p>
+		<p>Last logged location: <a href="#" onclick="moveToLocation({{ loc.latc }},{{ loc.longc }},3)">{{ loc.name }}</a></p>
 	</div>
 	<div id="mapholder">
 		<div id="map"></div>
@@ -15,13 +15,12 @@ footer: true
 	 	
 		function initMap() {
 			window.map = new google.maps.Map(document.getElementById('map'), {
-          zoom: window.defaultZoom,
+          zoom: 3,
           center: {lat: -28.024, lng: 140.887}
         });
 		
 		var markers = new Array();
 		var current;
-		window.defaultZoom = 3;
 		var infowindow = new google.maps.InfoWindow({
           content: 'Hello World',
 		  maxWidth: 250
