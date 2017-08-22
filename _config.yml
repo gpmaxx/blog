@@ -99,3 +99,5 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  - /_posts/examples
+  - /_posts/drafts
