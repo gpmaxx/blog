@@ -3,15 +3,10 @@ layout: default
 title: map
 footer: true
 ---
-	{% include catget.html %}
 	
 	<div class="lastLocation">
-	
 		{% assign loc = site.data.locations | last %}
-		<p>Last pinned location: <a href="#" onclick="moveToLocation({{ loc.latc }},{{ loc.longc }},3)">{{ loc.name }}</a></p>
-		<p>Pinned on: {{ loc.date | date: '%b %e, %Y' }}</p>
-		<p>Number pinned locations: {% site.data.locations | size %}</p>
-		<p>Number blogged locations: <a href="{{ site.baseurl }}locations/">{% cats | size %}</a> </p>
+		<p>Greg's last logged location: <a href="#" onclick="moveToLocation({{ loc.latc }},{{ loc.longc }},3)">{{ loc.name }}</a></p>
 	</div>
 	<div id="mapholder">
 		<div id="map"></div>
