@@ -247,6 +247,14 @@ img.banner {
 			content:'';
 		}
 
+.lastLocation {
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+	border-top: 1px dashed #000000;
+	border-bottom: 1px dashed #000000;
+	width: 100%
+	
+}
 
 #map {
 	width: 100%;
