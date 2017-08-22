@@ -9,7 +9,7 @@ footer: true
 
 {% for c in cats %}
 	{% if c != page.title %}
-		,<a href="{{ site.baseurl }}/location/{{ c }}">{{ c }}</a>
+, <a href="{{ site.baseurl }}/location/{{ c }}" class="tag">{{ c }}</a>
 	{% endif %}
 {% endfor %}
 </h3>
