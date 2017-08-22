@@ -10,7 +10,6 @@ footer: true
 		{% assign loc = site.data.locations | last %}
 		<p>Number pinned locations: {{ site.data.locations | size }}</p>
 		<p>Last pinned location: <a href="#" onclick="moveToLocation({{ loc.latc }},{{ loc.longc }},3)">{{ loc.name }} (lat: {{ loc.latc }}, long: {{ loc.longc }})</a>		</p>
-		<p>Pinned on: {{ loc.date }}</p>
 		<p>Pinned on: {{ loc.date | date: '%b %e, %Y' }}</p>
 		<p>Number blogged locations: <a href="{{ site.baseurl }}/locations/">{{ cats | size }}</a> </p>
 	</div>

@@ -2,8 +2,16 @@
 layout: default
 footer: true
 ---
+{% include catget.html %}
 
-<h3>Posts related to: {{ page.title }}</h3>
+<h3>Viewing posts related to: {{ page.title }}
+{% for c in cats %}
+	{% if forloop.first %},{% endif %}
+	{% if c != page.title %}
+		<a class="tag" href="{{ site.baseurl }}/location/{{ c }}">{{ c }}{% unless forloop.last %},{% endunless %}</a>
+	{% endif %}
+{% endif %}
+</h3>
 
 {% unless page.content == '' %}
   <p>{{ page.content }}</p>
