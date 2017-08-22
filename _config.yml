@@ -53,11 +53,17 @@ paginate: 5
 paginate_path: /page:num/
 
 defaults: 
-  - scope:
+  - 
+    scope:
       path: /page
     values:
       sitemap: false
-    
+-
+    scope:
+      path: ""      # empty string for all files
+      type: posts   # limit to posts
+    values:
+      isPost: true # automatically set isPost=true for all posts. This then allows default to access page.isPost in order to do logic based on it
 #
 # !! You don't need to change any of the configuration flags below !!
 #

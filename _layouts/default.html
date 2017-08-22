@@ -22,7 +22,11 @@
 
   <body>
 
-layout: {% page.layout %}
+{% if page.isPost %}
+	this is a post
+{% else %}
+	this is not a post
+{% endif %}
 
 <div class="sidebar w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
  <button class="hamburger w3-button w3-white w3-xlarge w3-hover-none" onclick="w3_close()">☰</button>
