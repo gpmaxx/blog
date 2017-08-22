@@ -1,6 +1,9 @@
 ---
 layout: post
-title: Markdown test 2
+title: Markdown Example
+category: Canada
+tags: demo tutorial
+comments: true
 ---
 
 This is a demo of all styled elements in Jekyll Now.
@@ -61,4 +64,4 @@ Finally, horizontal lines
 You can do sweet emojis :relaxed:
 
 ✓ This is a check
-✘  This  is  an  X
+✘  This is an X
