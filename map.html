@@ -6,7 +6,7 @@ footer: true
 
 	<div width="100%">
 		{% assign loc = site.data.locations | last %}
-		<p>Last logged location: <a href="#" onclick="moveToLocation(loc.latc,loc.longc)">{{ loc.name }}</a></p>
+		<p>Last logged location: <a href="#" onclick="moveToLocation({{ loc.latc }},{{ loc.longc }})">{{ loc.name }}</a></p>
 	</div>
 	<div id="mapholder">
 		<div id="map"></div>

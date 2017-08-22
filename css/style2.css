@@ -257,14 +257,3 @@ img.banner {
 	width: 80vw;
 	height: 70vh;
 }
-
-.locationData {
-			display:table;
-			width: 100%;
-		}
-		
-		.locationCell {
-			display:table-cell;
-			width: 50%;
-			word-break: break-all;
-		}
