@@ -180,7 +180,7 @@ img.banner {
 /* Pagination */
 
 .footerbar {
-	//margin-top: 1vh;
+	margin-top: 1vh;
 	margin-bottom: 1vh;
 	background: #ddd;
 	border-top: 1px solid #000000;
