@@ -3,11 +3,10 @@ layout: default
 title: map
 footer: true
 ---
-
+	
 	<div class="lastLocation">
 		{% assign loc = site.data.locations | last %}
 		<p>Greg's last logged location: <a href="#" onclick="moveToLocation({{ loc.latc }},{{ loc.longc }},3)">{{ loc.name }}</a></p>
-		<p>Number of previously logged locations: <a href="{{ site.baseurl }}/location/">{{ site.data.locations | size | minus: 1 }}</a></p>
 	</div>
 	<div id="mapholder">
 		<div id="map"></div>
