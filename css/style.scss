@@ -242,6 +242,8 @@ img.banner {
 	float: right;
 }
 
+/* Social media */
+
 .social {
 	margin-top: .2vh
 	
@@ -269,6 +271,21 @@ img.banner {
 .fb_iframe_widget span {
 	margin-top: 0;
 }
+
+.fbicon, .twicon {
+	margin-right: .25em;
+	font-size: 75%;
+	font-color: #FFFFFF;
+}
+
+.fbicon {
+	background-color: #3b5998;
+}
+
+.twicon {
+	background-color: #1da1f2;
+}
+
 
 
 
