@@ -10,7 +10,7 @@ footer: true
 {% assign comma = false %}
 {% for c in cats %}
 	{% if c != page.title %}
-		{% if comma == false %},
+		{% if comma == true %},
 		{% else %}
 			{% assign command = true %}
 		{% endif %}
