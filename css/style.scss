@@ -275,7 +275,16 @@ img.banner {
 .fbicon, .twicon {
 	margin-right: .25em;
 	font-size: 75%;
-	font-color: #FFFFFF;
+	border-radius: 10px;
+	
+	&:link, &:visited, &:hover, &:active {
+		color: #ffffff;
+	}
+	
+}
+
+.fbicon::before, .twicon::before {
+	color: #fff;
 }
 
 .fbicon {
