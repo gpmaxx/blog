@@ -276,6 +276,7 @@ img.banner {
 	margin-right: .25em;
 	font-size: 75%;
 	border-radius: 5px;
+	padding: .2em .5em .2em .5em;
 	
 	&:link, &:visited, &:hover, &:active {
 		color: #ffffff;
@@ -289,6 +290,7 @@ img.banner {
 
 .fbicon {
 	background-color: #3b5998;
+
 }
 
 .twicon {
