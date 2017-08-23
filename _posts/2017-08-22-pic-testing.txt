@@ -1,0 +1,13 @@
+---
+layout: post
+title: Testing
+category: 
+tags: testing
+---
+
+This is greg testing thing aging.  
+
+This is a picutre:
+
+
+![alt text](m5.png "an image title")
