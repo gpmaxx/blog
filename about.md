@@ -33,13 +33,13 @@ My [social media](http://www.lipscomb.ca){:target="_blank"} contacts are:
   
 <a href="https://twitter.com/gregssafari" class="faicon fa-twitter" target="_blank">@gregssafari</a>  
   
-<a href="https://www.instagram.com/_u/gregssafarinjema/" target="_blank"><i class="fa fa-tags fa-instagram fa-lg" aria-hidden="true"></i>&nbsp; GregsSafariNjema</a>  
+<a href="https://www.instagram.com/_u/gregssafarinjema/" class="faicon fa-instagram" target="_blank">GregsSafariNjema</a>  
   
-<a href="https://ca.linkedin.com/in/gregorylipscomb" target="_blank"><i class="fa fa-tags fa-linkedin-square fa-lg" aria-hidden="true"></i>&nbsp; GregsSafariNjema</a>  
+<a href="https://ca.linkedin.com/in/gregorylipscomb" class="faicon fa-linkedin-square" target="_blank">GregsSafariNjema</a>  
   
-<a href="https://github.com/gpmaxx/" target="_blank"><i class="fa fa-tags fa-github fa-lg" aria-hidden="true"></i>&nbsp; gpmaxx</a>  
+<a href="https://github.com/gpmaxx/" class="faicon fa-github" target="_blank">&nbsp; gpmaxx</a>  
   
-<a href="mailto:g_lipscomb@hotmail.com"><i class="fa fa-tags fa-at fa-lg" aria-hidden="true"></i>&nbsp; g_lipscomb@hotmail</a>  
+<a href="mailto:g_lipscomb@hotmail.com" class="faicon fa-envelope">g_lipscomb@hotmail</a>  
 
 
 
