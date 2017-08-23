@@ -4,9 +4,12 @@ title: About
 footer: true
 ---
 
-### About Greg
+# H1 Title #
+## H2 Title ##
+### H3 Title ###
+#### H4 Title ####
 
-Hello,  
+### About Greg
 
 After completing my computer science degree I had the good fortune to apply the skills I learned working as a volunteer IT teacher trainer for VSO. 
 At the age of 24, flying on a plane for the first time I spent 7 months working and living in Muleba, Tanzania.
@@ -25,7 +28,7 @@ I am also seeking oportunities in IT Technical Project managment globally.  Plea
 
 Some photos, videos and other details of my travels can be found on my social media accounts.   
 
-## Contact Greg
+### Contact Greg
 
 My [social media](http://www.lipscomb.ca){:target="_blank"} contacts are:
 
