@@ -18,6 +18,10 @@ body {
 	clear: both;
 	display: block;
 	
+@include mobile {
+    font-size: 2.5vmin;
+  }
+	
 }
 
 a {
@@ -240,19 +244,33 @@ img.banner {
 
 .social {
 	margin-top: .2vh
+	
+
+}
+
+.fb-share-button {
+	vertical-align: top;
+
+@include mobile {
+    transform: scale(.5)
+	transform-origin: top left;
+  }
 }
 
 .twitter-share-button {
 	vertical-align: top;
+
+@include mobile {
+    transform: scale(.5)
+	transform-origin: top left;
+  }
 }
 
 .fb_iframe_widget span {
 	margin-top: 0;
 }
 
-.fb-share-button {
-	vertical-align: top;
-}
+
 
 .clearfix:after {
 			display:block;
