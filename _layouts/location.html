@@ -24,15 +24,9 @@ footer: true
 {% endunless %}
 
 {% for post in site.categories.[page.category] %}
-   <article class="post">
-	<div class="postHeader">
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-	  <p class="date">Written: {{ post.date | date: "%b %e, %Y" }}</p>
-	  <p class="tag">Location: <a class="tag" href="{{ site.baseurl }}/location/{{ post.category | slugify }}">{{ post.category }}</a></p>
-	</div>
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+    <article class="post">
+	
+	  {% include articleHeader.html %}  
 
       <p class="read-more"><a href="{{ site.baseurl }}{{ post.url }}">[Continue Reading]</a><p>
     </article>
