@@ -6,7 +6,7 @@
 body {
 	background: #FFFFFF;
 	font-family: 'Raleway', sans-serif;
-	font-size: 2vh;
+	font-size: 2vmax;
 	color: #000000;
 	clear: both;
 	display: block;
@@ -100,6 +100,9 @@ p.tag, p.tag-header, div.tag-header, p.read-more, p.date, div.date {
 	line-height: 1.8vh;
 }
 
+.read-more {
+	margin-top: 1vh;
+}
 
 .topbar {
     float: left;

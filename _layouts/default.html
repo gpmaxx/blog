@@ -26,7 +26,7 @@
  {% include fbscript.html %}
 {% endif %}
 
-<div class="sidebar w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
+<div class="sidebar w3-sidebar w3-bar-block w3-border" style="display:none" id="mySidebar">
  <button class="hamburger w3-button w3-white w3-xlarge w3-hover-none" onclick="w3_close()">☰</button>
   <a href="{{ site.baseurl }}" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-none"><i class="fa fa-home fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Home</a>
   <a href="{{ site.baseurl }}/about/" class="w3-bar-item w3-button w3-hover-none"><i class="fa fa-user-circle fa-fw fa-lg" aria-hidden="true"></i>&nbsp; About</a>
@@ -71,7 +71,7 @@
 
  <script>
 function w3_open() {
-	document.getElementById("mySidebar").style.width = "10vw";
+	document.getElementById("mySidebar").style.width = "20vw";
     document.getElementById("mySidebar").style.display = "block";
 }
 function w3_close() {
