@@ -1,6 +1,9 @@
 ---
 ---
 
+@import "reset";
+@import "variables";
+
 * {
 	margin: 0vw;
 	padding: 0vw;
@@ -276,3 +279,5 @@ img.banner {
 	width: 80vw;
 	height: 70vh;
 }
+
+//@import "svg-icons";
