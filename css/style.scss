@@ -301,7 +301,7 @@ img.banner {
 	height: 70vh;
 }
 
-.icon::before {
+.faicon::before {
     display: inline-block;
     margin-right: .5em;
     font: normal normal normal 14px/1 FontAwesome;
@@ -312,8 +312,5 @@ img.banner {
     transform: translate(0, 0);
 }
 
-.icon {
-	text-align: right;
-}
 
 //@import "svg-icons";

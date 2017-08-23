@@ -29,9 +29,9 @@ Some photos, videos and other details of my travels can be found on my social me
 
 My [social media](http://www.lipscomb.ca){:target="_blank"} contacts are:
 
-<a href="https://www.youtube.com/channel/UCoP--yoNLIEuywh3392eX9g" target="_blank"><i class="fa fa-tags fa-youtube-play fa-lg" aria-hidden="true"></i>&nbsp; GregsSafariNjema</a>  
+<a href="https://www.youtube.com/channel/UCoP--yoNLIEuywh3392eX9g" class="faicon fa-youtube-play" target="_blank">GregsSafariNjema</a>  
   
-<a href="https://twitter.com/gregssafari" target="_blank"><i class="fa fa-tags fa-twitter fa-lg" aria-hidden="true" ></i>&nbsp; @gregssafari</a>  
+<a href="https://twitter.com/gregssafari" class="faicon fa-twitter" target="_blank">@gregssafari</a>  
   
 <a href="https://www.instagram.com/_u/gregssafarinjema/" target="_blank"><i class="fa fa-tags fa-instagram fa-lg" aria-hidden="true"></i>&nbsp; GregsSafariNjema</a>  
   
