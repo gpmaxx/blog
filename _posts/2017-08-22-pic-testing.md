@@ -3,6 +3,7 @@ layout: post
 title: Testing
 category: 
 tags: testing
+comments: true
 ---
 
 This is greg testing thing aging.  

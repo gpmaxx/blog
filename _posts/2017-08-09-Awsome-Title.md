@@ -3,6 +3,7 @@ layout: post
 title: Awsome-Title
 category: thailand
 tags: food
+comments: true
 ---
 
 This is a test posting from Hyde. This is a [link](http://www.lipscomb.ca). Here is some more text in  order for it to wrap
