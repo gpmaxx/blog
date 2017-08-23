@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Testing
-category: 
+category: canada
 tags: testing
 comments: true
 ---
