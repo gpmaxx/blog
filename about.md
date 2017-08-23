@@ -4,11 +4,6 @@ title: About
 footer: true
 ---
 
-# H1 Title #
-## H2 Title ##
-### H3 Title ###
-#### H4 Title ####
-
 ### About Greg
 
 After completing my computer science degree I had the good fortune to apply the skills I learned working as a volunteer IT teacher trainer for VSO. 
