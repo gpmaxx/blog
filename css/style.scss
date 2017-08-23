@@ -252,7 +252,7 @@ img.banner {
 	vertical-align: top;
 
 @include mobile {
-    transform: scale(.5)
+    transform: scale(.5);
 	transform-origin: top left;
   }
 }
@@ -261,7 +261,7 @@ img.banner {
 	vertical-align: top;
 
 @include mobile {
-    transform: scale(.5)
+    transform: scale(.5);
 	transform-origin: top left;
   }
 }
