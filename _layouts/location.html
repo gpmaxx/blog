@@ -7,10 +7,14 @@ footer: true
 
 <h3>Viewing posts related to: {{ page.title }}{% unless c | size < 2 %},{% endunless %}
 
+{% assign comma = false %}
 {% for c in cats %}
 	{% if c != page.title %}
-	{% unless forloop.first %},{% endunless %}
-<a href="{{ site.baseurl }}/location/{{ c }}" class="smaller">{{ c }}</a>
+		{% if comma == false %},
+		{% else %}
+			{% assign command = true %}
+		{% endif %}
+		<a href="{{ site.baseurl }}/location/{{ c }}" class="smaller">{{ c }}</a>
 	{% endif %}
 {% endfor %}
 </h3>
