@@ -4,7 +4,7 @@ title: About
 footer: true
 ---
 
-## About Greg
+### About Greg
 
 Hello,  
 
@@ -17,7 +17,7 @@ to travel to and live all around the world.
 
 Aside from travel I have been recently dabling with Arudino and hobby electronics. Some arduino libraries are available via my GitHub. 
 
-## What's Greg up to?  
+### What's Greg up to?  
   
 I am currently travelling for pleasure, backpacking through South East Asia.  
 
@@ -37,7 +37,7 @@ My [social media](http://www.lipscomb.ca){:target="_blank"} contacts are:
   
 <a href="https://ca.linkedin.com/in/gregorylipscomb" class="faicon fa-linkedin-square" target="_blank">GregsSafariNjema</a>  
   
-<a href="https://github.com/gpmaxx/" class="faicon fa-github" target="_blank">&nbsp; gpmaxx</a>  
+<a href="https://github.com/gpmaxx/" class="faicon fa-github" target="_blank">gpmaxx</a>  
   
 <a href="mailto:g_lipscomb@hotmail.com" class="faicon fa-envelope">g_lipscomb@hotmail</a>  
 
