@@ -9,7 +9,7 @@ title: Greg's Safari Njema
 	<div class="postHeader">
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 	  <p class="faicon fa-calendar date">{{ post.date | date: '%b %e, %Y' }}</p>
-	  <a class="faicon fa-globe tag w3-black" href="{{ site.baseurl }}/location/{{ post.category | slugify }}">{{ post.category }}</a></p>
+	  <a class="faicon fa-globe tag" href="{{ site.baseurl }}/location/{{ post.category | slugify }}">{{ post.category }}</a></p>
 		<div class="tag-list">
 			<p class="faicon fa-tag tag-header">
 				{% for tag in post.tags %}
@@ -17,7 +17,7 @@ title: Greg's Safari Njema
 				{% endfor %}
 			</p>
 		</div>
-	<p><a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" class="faicon fa-comment w3-black">leave commment</a></p>
+	<p><a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" class="faicon fa-comment">leave comment</a></p>
     </div>  	
 	  <div class="entry">
         {{ post.excerpt }}
