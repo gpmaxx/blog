@@ -243,6 +243,18 @@ img.banner {
 	float: right;
 }
 
+.faicon::before {
+    display: inline-block;
+    margin-right: .5em;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+	color: #000;
+}
+
 /* Social media */
 
 .social {
@@ -330,17 +342,7 @@ img.banner {
 	height: 70vh;
 }
 
-.faicon::before {
-    display: inline-block;
-    margin-right: .5em;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    transform: translate(0, 0);
-	color: #000;
-}
+
 
 
 //@import "svg-icons";
