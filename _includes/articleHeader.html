@@ -1,5 +1,9 @@
+
+{% assign p = post %}
+
+
 <div class="postHeader">
-	<h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+	<h1><a href="{{ site.baseurl }}{{ post.url }}">{{ p.title }}</a></h1>
 	<time class="faicon fa-calendar" datetime="{{post.date}}">{{ post.date | date: '%b %e, %Y' }}</time>
 	<a class="faicon fa-globe" href="{{ site.baseurl }}/location/{{ post.category | slugify }}">{{ post.category }}</a>
 	<span class="faicon fa-tag">
