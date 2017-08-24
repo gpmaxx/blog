@@ -21,11 +21,12 @@
     <meta property="og:description" content="{{ site.description }}" />
     {% endif %}
 	
-	{% if page.avatar %}
-		{% assign avatarURL = site.url | append: site.baseurl | append: page.avatar %}
+	{% if post.avatar %}
+		{% assign avatarURL = site.url | append: site.baseurl | append: post.avatar %}
 	{% else %}
 		{% assign avatarURL = site.url | append: site.baseurl | append: site.avatar %}
 	{% endif %}
+	
 	<meta property="og:image" content="{{ avatarURL }}" />
 	
 	<meta name="twitter:card" content="summary" />
