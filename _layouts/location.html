@@ -5,7 +5,7 @@ footer: true
 
 {% include catget.html isPost=false %}
 
-<h3>Viewing posts related to: {{ page.title }}{% unless c | size < 2 %},{% endunless %}
+<p>Posts related to: <strong>{{ page.title }}</strong>{% unless c | size < 2 %},{% endunless %}
 
 {% assign comma = false %}
 {% for c in cats %}
