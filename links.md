@@ -9,13 +9,13 @@ footer:	  true
 [VSO International](https://www.vsointernational.org/){:target="_blank"}  
 
 ### Travel fun ###  
-[CZone Diver](http://www.czonediver.com/){:target="_blank"}  
+[CZone Diver Koh Tao](http://www.czonediver.com/){:target="_blank"}  
   
 ### Charity's support ###
 [Sick Kid's Foundation](https://www.sickkidsfoundation.com/#/){:target="_blank"} 
 [Plan International](https://plan-international.org/){:target="_blank"}
 
-### Social Media
+### Social Media ###
 
 <a href="https://www.youtube.com/channel/UCoP--yoNLIEuywh3392eX9g" class="faicon fa-youtube-play" target="_blank">GregsSafariNjema</a>  
   
