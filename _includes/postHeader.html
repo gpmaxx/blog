@@ -20,7 +20,10 @@
 	{% if include.isPost %}
 		<div class="social">
 			<a href="#" class="fbicon faicon fa-facebook-square" title="Share on Facebook">Share</a>
-			<a href="#" class="twicon faicon fa-twitter-square" title="Tweet on Twitter">Tweet</a>
+			{% assign theText = site.sm-links.twitter | append: ' - ' | append: p.title %}
+			{% assign theURL = site.baseurl | append: p.url | slugify %}
+			{% assign theTags = "gregssafarinjema" %}
+			<a href="http://twitter.com/share?text={{ text }}&url={{ url }}&hastags={{ theTags}}" class="twicon faicon fa-twitter-square" title="Tweet on Twitter">Tweet</a>
 		</div>
 	{% endif %}
 	
