@@ -189,18 +189,21 @@ img {
 */
 
 .postHeaderMeta, .postDetailsMeta {
-	margin-bottom: 1vh;
-	padding-bottom: 1vh;
-	border-bottom: 2px dashed #eee;
+
 	font-size: .75em;
-	
 @include mobile {
     font-size: .5em;
   }
 }
 
+.postHeaderMeta {
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+	border-bottom: 2px dashed #eee;
+}
+
 .postDetailsMeta {
-	margin-left: 5em;	
+	margin-left: 3em;	
 }
 
 /* Pagination */
