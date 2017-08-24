@@ -1,7 +1,7 @@
 
 <div class="postDetails">
 	<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-	<time class="faicon fa-calendar" datetime="{{post.date}}">{{ p.date | date: '%b %e, %Y' }}</time>
+	<time class="faicon fa-calendar" datetime="{{post.date}}">{{ post.date | date: '%b %e, %Y' }}</time>
 	<a class="faicon fa-globe" href="{{ site.baseurl }}/location/{{ post.category | slugify }}">{{ post.category }}</a>
 	<span class="faicon fa-tag">
 		{% for tag in post.tags %}
