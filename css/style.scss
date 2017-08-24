@@ -188,20 +188,19 @@ img {
 
 */
 
-.postHeader {
+.postHeaderMeta, .postDetailsMeta {
 	margin-bottom: 1vh;
 	padding-bottom: 1vh;
 	border-bottom: 2px dashed #eee;
-}
-
-.postMeta {
 	font-size: .75em;
 	
 @include mobile {
     font-size: .5em;
   }
-	
-	
+}
+
+.postDetailsMeta {
+	margin-left: 5em;	
 }
 
 /* Pagination */

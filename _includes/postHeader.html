@@ -7,7 +7,7 @@
 
 <div class="postHeader">
 	<h1><a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a></h1>
-	<div class="postMeta">
+	<div class="postHeaderMeta">
 		<time class="faicon fa-calendar" datetime="{{p.date}}">{{ p.date | date: '%b %e, %Y' }}</time>
 		<a class="faicon fa-globe" href="{{ site.baseurl }}/location/{{ p.category | slugify }}">{{ p.category }}</a>
 		<span class="faicon fa-tag">
