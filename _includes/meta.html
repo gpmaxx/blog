@@ -21,10 +21,15 @@
     <meta property="og:description" content="{{ site.description }}" />
     {% endif %}
 	
-	{% if page.thumb %}
-		{% assign thumbURL = site.url | append: site.baseurl | append: '/pictures/' | append: page.thumb %}
-	{% else %}
-		{% assign thumbURL = site.url | append: site.baseurl | append: site.avatar %}
+	
+	{% assign thumbURL = site.url | append: site.baseurl | append: site.avatar %}
+	{% if page.thumb %}			
+		{% for static_file in site.static_files %}
+			{% if static_file.path == page.thumb %}
+				{% assign thumbURL = site.url | append: site.baseurl | append: page.thumb %}
+				{% break %}
+			{% endif %}
+		{% endfor %}
 	{% endif %}
 	
 	<link rel="image_src" href="{{ thumbURL }}" />
