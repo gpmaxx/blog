@@ -21,18 +21,21 @@
     <meta property="og:description" content="{{ site.description }}" />
     {% endif %}
 	
-	{% if post.avatar %}
-		{% assign avatarURL = site.url | append: site.baseurl | append: post.avatar %}
+	page: {{ page.thumb }}
+	post: {{ post.thumb }}
+	
+	{% if page.thumb %}
+		{% assign thumbURL = site.url | append: site.baseurl | append: page.thumb %}
 	{% else %}
-		{% assign avatarURL = site.url | append: site.baseurl | append: site.avatar %}
+		{% assign thumbURL = site.url | append: site.baseurl | append: site.avatar %}
 	{% endif %}
 	
-	<meta property="og:image" content="{{ avatarURL }}" />
+	<meta property="og:image" content="{{ thumbURL }}" />
 	
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:site content="@{{ site.sm-links.twitter }}" />
 	<meta name="twitter:title" content="{{ page.title }}" />
 	<meta name="twitter::description" content="{{ site.description }}" />
-	<meta name="twitter::image" content="{{ avatarURL }}" />
+	<meta name="twitter::image" content="{{ thumbURL }}" />
     
 	<meta name="viewport" content="width=device-width, initial-scale=1">
