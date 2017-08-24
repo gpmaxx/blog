@@ -1,9 +1,14 @@
 ---
 ---
 
+/** Imports **/
+
 @import "reset";
 @import "variables";
 
+
+
+/* Tag Rules */
 * {
 	margin: 0vw;
 	padding: 0vw;
@@ -37,6 +42,12 @@ div.sidebar {
 	font-size: 1.5vmin;
 }
 
+div.sidebar > a {
+	font-size: 16px;
+	margin: 8px 0vh 8px 8px;
+	line-height: 150%;
+}
+
 div.sidebar a:link { 
 	color: inherit;
 }
@@ -60,9 +71,6 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: .25em;
 }
 
-
-
-
 h1 {
 	font-family: 'Kalam', sans-serif;
 	font-size: 2em;
@@ -70,6 +78,11 @@ h1 {
 	margin-bottom: 0vh;
 	line-height: 80%;
 	vertical-align: middle;
+
+@include mobile {
+	font-family: inherit;
+    font-size: 1.5em;
+  }
 	
 }
 
@@ -106,11 +119,12 @@ p {
 	margin-bottom: 1vh;
 }
 
-p.read-more {
-	margin-bottom: 0vh;
-	font-size: 75%;
-	line-height: 120%
+img {
+	max-width: 100%;
+	max-height: 100%;
 }
+
+
 
 em, i {
   font-style: italic;
@@ -118,6 +132,15 @@ em, i {
 
 strong, b {
   font-weight: bold;
+}
+
+
+/* Class Rules */
+
+p.read-more {
+	margin-bottom: 0vh;
+	font-size: 75%;
+	line-height: 120%
 }
 
 .read-more {
@@ -134,21 +157,6 @@ strong, b {
 	font-size: 5vmin;
 	height: 5vmin;
 }
-
-div.sidebar > a {
-	font-size: 16px;
-	margin: 8px 0vh 8px 8px;
-	line-height: 150%;
-}
-
-
-/*
-.headercontainer {
-	padding-left: 0vw;
-	padding-right: 0vw;
-}
-
-*/
 
 .articleDetails {
 	list-style-type: none
@@ -178,23 +186,10 @@ div.sidebar > a {
 
 }
 
-img {
-	max-width: 100%;
-	max-height: 100%;
-}
-
 .post {
 	margin-bottom: 1vh;
 	border-top: 1px solid #000;
 }
-
-/*
-.post:last-of-type {
-	border-bottom: 1px solid #000;
-	margin-bottom: 0vh;
-}
-
-*/
 
 .postHeaderMeta, .postDetailsMeta {
 
@@ -298,28 +293,6 @@ img {
 	line-height: 0%;
 }
 
-.fb-share-button {
-	vertical-align: top;
-
-@include mobile {
-    transform: scale(.5);
-	transform-origin: top left;
-  }
-}
-
-.twitter-share-button {
-	vertical-align: top;
-
-@include mobile {
-    transform: scale(.5);
-	transform-origin: top left;
-  }
-}
-
-.fb_iframe_widget span {
-	margin-top: 0;
-}
-
 .fbicon, .twicon {
 	margin-right: .25em;
 	font-size: .75em;
@@ -350,13 +323,11 @@ img {
 }
 
 
-
-
 .clearfix:after {
 			display:block;
 			clear:both;
 			content:'';
-		}
+}
 
 .lastLocation {
 	margin-top: 1vh;
@@ -380,8 +351,5 @@ img {
 	width: 80vw;
 	height: 70vh;
 }
-
-
-
 
 //@import "svg-icons";

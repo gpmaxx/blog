@@ -12,7 +12,7 @@ footer:	  true
 [CZone Diver Koh Tao](http://www.czonediver.com/){:target="_blank"}  
   
 ### Charity's support ###
-[Sick Kid's Foundation](https://www.sickkidsfoundation.com/#/){:target="_blank"} 
+[Sick Kid's Foundation](https://www.sickkidsfoundation.com/#/){:target="_blank"}   
 [Plan International](https://plan-international.org/){:target="_blank"}
 
 ### Social Media ###
