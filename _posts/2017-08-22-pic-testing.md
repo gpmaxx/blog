@@ -4,7 +4,7 @@ title: Testing
 category: thailand
 tags: testing
 comments: true
-thumb: m5.png
+thumb: m5.jpg
 ---
 
 This is greg testing thing aging.  
