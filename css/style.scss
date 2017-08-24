@@ -195,7 +195,13 @@ img {
 }
 
 .postMeta {
-	font-size: 50%;
+	font-size: .75em;
+	
+@include mobile {
+    font-size: .5em;
+  }
+	
+	
 }
 
 /* Pagination */
@@ -294,13 +300,17 @@ img {
 
 .fbicon, .twicon {
 	margin-right: .25em;
-	font-size: 75%;
+	font-size: .75em;
 	border-radius: 10% / 25%;
 	padding: .2em .5em .2em .5em;
 	
 	&:link, &:visited, &:hover, &:active {
 		color: #ffffff;
 	}
+	
+@include mobile {
+    font-size: .5em;
+  }
 	
 }
 
