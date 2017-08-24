@@ -106,7 +106,7 @@ p {
 	margin-bottom: 1vh;
 }
 
-p.tag, p.tag-header, div.tag-header, p.read-more, p.date, div.date {
+p.read-more {
 	margin-bottom: 0vh;
 	font-size: 75%;
 	line-height: 120%
@@ -171,10 +171,6 @@ div.sidebar > a {
 }
 
 img {
-	border: 5px solid #00F;
-}
-
-img.banner {
 	max-width: 100%;
 	max-height: 100%;
 }
@@ -196,6 +192,10 @@ img.banner {
 	margin-bottom: 1vh;
 	padding-bottom: 1vh;
 	border-bottom: 2px dashed #eee;
+}
+
+.postMeta {
+	font-size: 75%;
 }
 
 /* Pagination */
