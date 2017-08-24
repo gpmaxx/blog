@@ -11,9 +11,9 @@ footer: true
 {% for c in cats %}
 	{% if c != page.title %}
 		{% if comma == true %}
-			<a href="{{ site.baseurl }}/location/{{ c }}" class="smaller">, {{ c }}</a>
+			<a href="{{ site.baseurl }}/location/{{ c }}" class="smaller cutspace">, {{ c }}</a>
 		{% else %}
-			<a href="{{ site.baseurl }}/location/{{ c }}" class="smaller">{{ c }}</a>
+			<a href="{{ site.baseurl }}/location/{{ c }}" class="smaller cutspace">{{ c }}</a>
 			{% assign comma = true %}
 		{% endif %}
 	{% endif %}
