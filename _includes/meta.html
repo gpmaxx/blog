@@ -22,9 +22,9 @@
     {% endif %}
 	
 	{% if page.thumb %}
-		{% assign thumbURL = site.url | append: site.baseurl | append: page.thumb %}
+		{% assign thumbURL = site.url | append: site.baseurl | append: '/pictures/' | append: page.thumb %}
 	{% else %}
-		{% assign thumbURL = site.url | append: site.baseurl | append: site.avatar %}
+		{% assign thumbURL = site.url | append: site.baseurl | append: '/images/' | append: site.avatar %}
 	{% endif %}
 	
 	<meta property="og:image" content="{{ thumbURL }}" />
