@@ -56,8 +56,8 @@ div.sidebar a:active {
 h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
 	color: #000000;
-	margin-bottom: 1vh;
-	margin-top: 1.5vh;
+	margin-bottom: .25em;
+	margin-top: .25em;
 }
 
 
@@ -197,9 +197,8 @@ img {
 }
 
 .postHeaderMeta {
-	margin-bottom: 1em;
-	padding-bottom: 1em;
 	border-bottom: 2px dashed #eee;
+	line-height: 200%;
 }
 
 .postDetailsMeta {
