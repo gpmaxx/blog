@@ -21,9 +21,6 @@
     <meta property="og:description" content="{{ site.description }}" />
     {% endif %}
 	
-	page: {{ page.thumb }}
-	post: {{ post.thumb }}
-	
 	{% if page.thumb %}
 		{% assign thumbURL = site.url | append: site.baseurl | append: page.thumb %}
 	{% else %}
