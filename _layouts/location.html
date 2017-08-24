@@ -12,7 +12,7 @@ footer: true
 	{% if c != page.title %}
 		{% if comma == true %},
 		{% else %}
-			{% assign command = true %}
+			{% assign comma = true %}
 		{% endif %}
 		<a href="{{ site.baseurl }}/location/{{ c }}" class="smaller">{{ c }}</a>
 	{% endif %}
