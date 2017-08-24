@@ -19,8 +19,8 @@
 	</div>
 	{% if include.isPost %}
 		<div class="social">
-			{% assign theURL = {{ site.url | append: p.url | uri_escape %}		
-			<a href="https://www.facebook.com/sharer/sharer.pho?u={{ theURL }}" class="fbicon faicon fa-facebook-square" title="Share on Facebook">Share</a>
+			{% assign theURL = site.url | append: p.url | uri_escape %}		
+			<a href="https://www.facebook.com/sharer/sharer.php?u={{ theURL }}" class="fbicon faicon fa-facebook-square" title="Share on Facebook">Share</a>
 			{% assign theTitle = "Greg's Safari Njema - " | append: p.title | append: ' @' | append: site.sm-links.twitter | uri_escape %}
 			{% assign theURL = site.url | append: p.url | uri_escape %}
 			{% assign theTags = "gregssafarinjema" %}
