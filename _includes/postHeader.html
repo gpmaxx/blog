@@ -20,8 +20,8 @@
 	{% if include.isPost %}
 		<div class="social">
 			<a href="#" class="fbicon faicon fa-facebook-square" title="Share on Facebook">Share</a>
-			{% assign theText = '@' | append: site.sm-links.twitter | append: ' - ' | append: p.title | slugify %}
-			{% assign theURL = site.url | append: p.url | slugify %}
+			{% assign theText = '@' | append: site.sm-links.twitter | append: ' - ' | append: p.title | uri_escape %}
+			{% assign theURL = site.url | append: p.url | uri_escape %}
 			{% assign theTags = "gregssafarinjema" %}
 			<a href="http://twitter.com/share?text={{ theText }}&url={{ theURL }}&hastags={{ theTags}}" class="twicon faicon fa-twitter-square" title="Tweet on Twitter">Tweet</a>
 		</div>
