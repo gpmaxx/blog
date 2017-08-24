@@ -19,10 +19,10 @@
 	</div>
 	{% if include.isPost %}
 		<div class="social">
-			{% assign theURL = site.url | append: p.url | uri_escape %}		
+			{% assign theURL = site.baseurl | append: p.url | uri_escape %}		
 			<a href="https://www.facebook.com/sharer/sharer.php?u={{ theURL }}" class="fbicon faicon fa-facebook-square" title="Share on Facebook">Share</a>
 			{% assign theTitle = "Greg's Safari Njema - " | append: p.title | append: ' @' | append: site.sm-links.twitter | uri_escape %}
-			{% assign theURL = site.url | append: p.url | uri_escape %}
+			{% assign theURL = site.baseurl | append: p.url | uri_escape %}
 			{% assign theTags = "gregssafarinjema" %}
 			<a href="http://twitter.com/share?text={{ theTitle }}&url={{ theURL }}&hashtags={{ theTags}}" class="twicon faicon fa-twitter-square" title="Tweet on Twitter">Tweet</a>
 		</div>
