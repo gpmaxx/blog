@@ -39,6 +39,9 @@ disqus: gregssafarinjema
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: UA-104379358-1
 
+# Enter your Google Maps API key for accessing google maps
+google_maps_key: AIzaSyCwHFD0Aoknao8NMZRXfUEllV84Xik370A
+
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
 url:  http://lipscomb.ca
