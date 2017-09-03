@@ -131,7 +131,7 @@ img.half, figure.half {
 	margin: 0px;
 }
 
-img.float {
+img.float, figure.float {
 	float: left;
 }
 
@@ -149,7 +149,7 @@ strong, b {
 figure.videoWrapper {
 	display:block;
 	padding: 0px;
-	margin: 0px;
+	margin: 0 0 1vh 0;
 	width: 50%;
 }
 
