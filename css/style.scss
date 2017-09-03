@@ -125,7 +125,7 @@ img {
 }
 
 img.half, figure.half {
-	margin-right: .75vw;
+	margin: 1vh .74vw 1vh 0;
 	width: 50%;
 	padding: 0px;
 	margin: 0px;
@@ -133,6 +133,7 @@ img.half, figure.half {
 
 img.float, figure.float {
 	float: left;
+	clear: left;
 }
 
 em, i {
