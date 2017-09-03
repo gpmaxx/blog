@@ -124,18 +124,6 @@ img {
 	max-height: 100%;
 }
 
-img.half, figure.half {
-	margin: 1vh .74vw 1vh 0;
-	width: 50%;
-	padding: 0px;
-	margin: 0px;
-}
-
-img.float, figure.float {
-	float: left;
-	clear: left;
-}
-
 em, i {
   font-style: italic;
 }
@@ -144,8 +132,23 @@ strong, b {
   font-weight: bold;
 }
 
+figure {
+	margin: 0px;
+}
+
 
 /* Class Rules */
+
+img.half, figure.half {
+	margin: 1vh .75vw 1vh 0;
+	width: 50%;
+	padding: 0px;
+}
+
+img.float, figure.float {
+	float: left;
+	clear: left;
+}
 
 figure.videoWrapper {
 	display:block;
