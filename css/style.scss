@@ -140,7 +140,8 @@ figure {
 /* Class Rules */
 
 img.half, figure.half {
-	margin: 1vh .75vw 1vh 0;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
 	width: 50%;
 	padding: 0px;
 }
@@ -148,11 +149,15 @@ img.half, figure.half {
 img.floatleft, figure.floatleft {
 	float: left;
 	clear: both;
+	margin-left: 0;
+	margin-right: .75vw;
 }
 
 img.floatright, figure.floatright {
 	float: right;
 	clear: both;
+	margin-left: .75vw;
+	margin-right: 0;
 }
 
 figure.videoWrapper {
