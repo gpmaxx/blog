@@ -124,7 +124,13 @@ img {
 	max-height: 100%;
 }
 
-img.photo {
+img.photoHalf {
+	margin-bottom: 1vh;
+	margin-right: .75vw;
+	width: 50%;
+}
+
+img.float {
 	float: left;
 }
 
