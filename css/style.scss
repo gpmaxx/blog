@@ -133,7 +133,7 @@ strong, b {
 }
 
 figure {
-	margin: 0px;
+	margin: 1vh 0 1vh 0;
 }
 
 
@@ -145,9 +145,14 @@ img.half, figure.half {
 	padding: 0px;
 }
 
-img.float, figure.float {
+img.floatleft, figure.floatleft {
 	float: left;
-	clear: left;
+	clear: both;
+}
+
+img.floatright, figure.floatright {
+	float: right;
+	clear: both;
 }
 
 figure.videoWrapper {
