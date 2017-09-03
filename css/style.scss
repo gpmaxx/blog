@@ -125,7 +125,6 @@ img {
 }
 
 img.photoHalf {
-	margin-bottom: 1vh;
 	margin-right: .75vw;
 	width: 50%;
 }
@@ -133,8 +132,6 @@ img.photoHalf {
 img.float {
 	float: left;
 }
-
-
 
 em, i {
   font-style: italic;
@@ -147,6 +144,11 @@ strong, b {
 
 /* Class Rules */
 
+figure.videowrapper {
+	display:block;
+	padding: 10px;
+	clear: both;
+}
 
 // https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
 .videoWrapper {
