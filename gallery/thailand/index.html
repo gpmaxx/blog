@@ -9,7 +9,7 @@ gallery: thailand
 
 	{{ image.path }}
 	
-    {% if image.path contains "gallery/{{ page.gallery }}" %}
+    {% if image.path contains gallery/{{ page.gallery }} %}
 		yes
 	{% else %}
 	   no
