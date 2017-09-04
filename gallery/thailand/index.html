@@ -1,26 +1,73 @@
----
-layout: default
-title: Thailand Gallery
-gallery: thailand
----
+<html>
+	<head>
+		<script src="/scripts/isotop.pkgd.js"></script>
+		<script>
+		$('.grid').isotope({
+  itemSelector: '.grid-item',
+  masonry: {
+    columnWidth: 100,
+    horizontalOrder: true,
+  }
+});
+</script>
+		<style>
+			* { box-sizing: border-box; }
 
-{% assign searchterm = '/gallery/' | append: page.gallery | append: '/'  %}
+body {
+  font-family: sans-serif;
+}
 
-{% for image in site.static_files %}
-    {% if image.path contains searchterm %}
-		<div class="responsive">
-			<div class="gallery">				
-				{% assign desc = image.path | split: '/' | last %}
-				{% for line in site.data.[page.gallery] %}
-					{% if image.path contains line.file %}
-						{% assign desc = line.desc %}
-					{% endif %}
-				{% endfor %}
-				<a target="_blank" href="{{ site.baseurl }}{{ image.path }}">
-					<img src="{{ site.baseurl }}{{ image.path }}" title="{{ desc }}" />
-					<div class="desc">{{ desc }}</div>
-				</a>
-			</div>
+/* ---- grid ---- */
+
+.grid {
+  background: #DDD;
+  max-width: 1200px;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-item {
+  float: left;
+  width: 200px;
+  height: 160px;
+  background: #0D8;
+  border: 2px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.7);
+  counter-increment: item;
+}
+
+.grid-item:before {
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  padding: 0.2em;
+  content: counter(item);
+}
+
+		</style>
+	</head>
+	<body>
+		<h1>Isotope - horizontalOrder</h1>
+
+		<div class="grid">
+			<div class="grid-item><img src="/blog/gallery/thailand/01.jpg" /></div>
+			<div class="grid-item><img src="/blog/gallery/thailand/02.jpg" /></div>
+			<div class="grid-item><img src="/blog/gallery/thailand/03.jpg" /></div>
+			<div class="grid-item><img src="/blog/gallery/thailand/04.jpg" /></div>
+			<div class="grid-item><img src="/blog/gallery/thailand/05.jpg" /></div>
+			<div class="grid-item><img src="/blog/gallery/thailand/06.jpg" /></div>
+			<div class="grid-item><img src="/blog/gallery/thailand/07.jpg" /></div>
+			<div class="grid-item><img src="/blog/gallery/thailand/08.jpg" /></div>
+			<div class="grid-item><img src="/blog/gallery/thailand/09.jpg" /></div>
+			<div class="grid-item><img src="/blog/gallery/thailand/10.jpg" /></div>
+			<div class="grid-item><img src="/blog/gallery/thailand/11.jpg" /></div>
 		</div>
-    {% endif %}
-{% endfor %}
+	</body>
+</html>

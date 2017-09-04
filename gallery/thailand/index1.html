@@ -1,0 +1,26 @@
+---
+layout: default
+title: Thailand Gallery
+gallery: thailand
+---
+
+{% assign searchterm = '/gallery/' | append: page.gallery | append: '/'  %}
+
+{% for image in site.static_files %}
+    {% if image.path contains searchterm %}
+		<div class="responsive">
+			<div class="gallery">				
+				{% assign desc = image.path | split: '/' | last %}
+				{% for line in site.data.[page.gallery] %}
+					{% if image.path contains line.file %}
+						{% assign desc = line.desc %}
+					{% endif %}
+				{% endfor %}
+				<a target="_blank" href="{{ site.baseurl }}{{ image.path }}">
+					<img src="{{ site.baseurl }}{{ image.path }}" title="{{ desc }}" />
+					<div class="desc">{{ desc }}</div>
+				</a>
+			</div>
+		</div>
+    {% endif %}
+{% endfor %}
