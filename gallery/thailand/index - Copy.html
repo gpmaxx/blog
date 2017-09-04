@@ -16,7 +16,7 @@ gallery: thailand
 							{% assign desc = line.desc %}
 						{% endif %}
 					{% endfor %}
-					<a href="{{ site.baseurl}}{{ image.path }}" data-lightbox="{{ page.gallery }}">
+					<a href="{{ site.baseurl}}{{ image.path }}" target="_blank">
 						<img src="{{ site.baseurl }}{{ image.path }}" title="{{ desc }}" />
 					</a>
 				</div>
