@@ -1,91 +1,26 @@
-<html>
-	<head>		
-		<script src="/blog/scripts/packery-mode.pkgd.min.js" type="text/javascript"></script>
-		<script src="/blog/scripts/imagesloaded.pkgd.min.js" type="text/javascript"></script>
-		
-		<script type="text/javascript">
-			var grid = document.querySelector('.grid');
-		var pckry;
+---
+layout: default
+title: Thailand Gallery
+gallery: thailand
+---
 
-		imagesLoaded( grid, function() {
-		// init Packery after all images have loaded
-		pckry = new Packery( grid, {
-		itemSelector: '.grid-item',
-		percentPosition: true
-		});
-		});
-		</script>
-<style>
-* { box-sizing: border-box; }
+{% assign searchterm = '/gallery/' | append: page.gallery | append: '/'  %}
 
-/* force scrollbar */
-html { overflow-y: scroll; }
-
-body { font-family: sans-serif; }
-
-/* ---- grid ---- */
-
-.grid {
-  background: #DDD;
-}
-
-/* clear fix */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-/* ---- .grid-item ---- */
-
-.grid-item {
-  width: 33.333%;
-}
-
-.grid-item {
-  float: left;
-}
-
-.grid-item img {
-  display: block;
-  max-width: 100%;
-}
-
-
-		</style>
-	</head>
-	<body>
-		<h1>Packery - imagesLoaded callback</h1>
-
-<div class="grid">
-  <div class="grid-item">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" />
-  </div>
-  <div class="grid-item">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" />
-  </div>
-  <div class="grid-item">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" />
-  </div>
-  <div class="grid-item">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
-  </div>
-  <div class="grid-item">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" />
-  </div>
-  <div class="grid-item">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
-  </div>
-  <div class="grid-item">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" />
-  </div>
-  <div class="grid-item">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
-  </div>
-  <div class="grid-item">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
-  </div>
-</div>
-
-	</body>
-</html>
+{% for image in site.static_files %}
+    {% if image.path contains searchterm %}
+		<div class="responsive">
+			<div class="gallery">				
+				{% assign desc = image.path | split: '/' | last %}
+				{% for line in site.data.[page.gallery] %}
+					{% if image.path contains line.file %}
+						{% assign desc = line.desc %}
+					{% endif %}
+				{% endfor %}
+				<a target="_blank" href="{{ site.baseurl }}{{ image.path }}">
+					<img src="{{ site.baseurl }}{{ image.path }}" title="{{ desc }}" />
+					<div class="desc">{{ desc }}</div>
+				</a>
+			</div>
+		</div>
+    {% endif %}
+{% endfor %}
