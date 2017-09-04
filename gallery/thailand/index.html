@@ -7,7 +7,7 @@ gallery: thailand
 {% assign searchterm = '/gallery/' | append: page.gallery | append: '/'  %}
 <div class="gallery">
 {% for image in site.static_files %}
-    {% if image.path contains searchterm %}	
+    {% if image.path contains searchterm and image.extname == '.jpg' %}	
 			<div class="responsive">
 				<div class="image">				
 					{% assign desc = image.path | split: '/' | last %}
@@ -16,13 +16,10 @@ gallery: thailand
 							{% assign desc = line.desc %}
 						{% endif %}
 					{% endfor %}
-					<a target="_blank" href="{{ site.baseurl }}{{ image.path }}">
 						<img src="{{ site.baseurl }}{{ image.path }}" title="{{ desc }}" />
 						<div class="overlay">
 							<div>{{ desc }}</div>
 						</div>
-					</a>
-					
 				</div>
 			</div>		
     {% endif %}
