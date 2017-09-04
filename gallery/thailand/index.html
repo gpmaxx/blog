@@ -9,9 +9,6 @@ gallery: thailand
 Search Term: {{ searchterm }}
 
 {% for image in site.static_files %}
-
-	{{ image.path }}
-
     {% if image.path contains searchterm %}
 		<div class="responsive">
 			<div class="gallery">
@@ -23,6 +20,3 @@ Search Term: {{ searchterm }}
 		</div>
     {% endif %}
 {% endfor %}
-
-
-Gallery Name: {{ page.gallery }}
