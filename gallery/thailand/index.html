@@ -3,7 +3,18 @@
 		<script src="/blog/scripts/packery-mode.pkgd.min.js" type="text/javascript"></script>
 		<script src="/blog/scripts/imagesloaded.pkgd.min.js" type="text/javascript"></script>
 		
+		<script type="text/javascript">
+			var grid = document.querySelector('.grid');
+		var pckry;
 
+		imagesLoaded( grid, function() {
+		// init Packery after all images have loaded
+		pckry = new Packery( grid, {
+		itemSelector: '.grid-item',
+		percentPosition: true
+		});
+		});
+		</script>
 <style>
 * { box-sizing: border-box; }
 
@@ -75,18 +86,6 @@ body { font-family: sans-serif; }
     <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
   </div>
 </div>
-
-		<script>
-var $grid = $('.grid').imagesLoaded( function() {
-  // init Packery after all images have loaded
-  $grid.packery({
-    itemSelector: '.grid-item',
-    percentPosition: true
-  });
-});  
-
- 
-</script>
 
 	</body>
 </html>
