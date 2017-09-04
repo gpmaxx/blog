@@ -18,7 +18,11 @@ gallery: thailand
 					{% endfor %}
 					<a target="_blank" href="{{ site.baseurl }}{{ image.path }}">
 						<img src="{{ site.baseurl }}{{ image.path }}" title="{{ desc }}" />
+						<div class="middle">
+							<div class="text">{{ desc }}</div>
+						</div>
 					</a>
+					
 				</div>
 			</div>		
     {% endif %}
