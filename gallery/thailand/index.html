@@ -16,10 +16,9 @@ gallery: thailand
 							{% assign desc = line.desc %}
 						{% endif %}
 					{% endfor %}
+					<a href="{{ site.baseurl}}{{ image.path }}" target="_blank">
 						<img src="{{ site.baseurl }}{{ image.path }}" title="{{ desc }}" />
-						<div class="overlay">
-							<div>{{ desc }}</div>
-						</div>
+					</a>
 				</div>
 			</div>		
     {% endif %}
