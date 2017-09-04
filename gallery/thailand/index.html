@@ -20,3 +20,9 @@ Search Term: {{ searchterm }}
 		</div>
     {% endif %}
 {% endfor %}
+
+
+{% for line in site.data.[page.gallery] %}
+{{ line.file }} {{ line.desc }}
+
+{% endfor %}
