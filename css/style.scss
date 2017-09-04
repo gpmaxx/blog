@@ -208,17 +208,24 @@ div.responsive {
 	height: 15vw;
 }
 
-/*
+@media only screen and (max-width: 1000px){
+    .responsive {
+        width: 26.7vw;
+        height: 20vw;
+    }
+}
+
 @media only screen and (max-width: 700px){
     .responsive {
-        width: 49.99999%;
-        margin: 6px 0;
+        width: 40vw;
+        height: 30vw;
     }
 }
 
 @media only screen and (max-width: 500px){
     .responsive {
-        width: 100%;
+        width: 80vw;
+		heigth: 60vw;
     }
 }
 
