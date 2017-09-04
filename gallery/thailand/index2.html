@@ -1,0 +1,16 @@
+---
+layout: default
+title: Thailand Gallery
+gallery: thailand
+---
+{% assign searchterm = '/gallery/' | append: page.gallery | append: '/'  %}
+
+<section id="gallery">
+
+{% for image in site.static_files %}
+    {% if image.path contains searchterm %}
+			<img src="{{ site.baseurl }}{{ image.path }}" title="{{ desc }}" />
+    {% endif %}
+{% endfor %}
+</div>
+
