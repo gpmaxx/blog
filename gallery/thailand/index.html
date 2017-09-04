@@ -4,8 +4,13 @@ title: Thailand Gallery
 gallery: thailand
 ---
 
+hello
+
 {% for image in site.static_files %}
-    {% if image.path contains 'gallery/{{ page.gallery }}' %}
+
+	{{ image.path }}
+	
+    {% if image.path contains "gallery/{{ page.gallery }}" %}
 	<div class="responsive">
 		<div class="gallery">
 			<a target="_blank" href="{{ site.baseurl }}{{ image.path }}">
