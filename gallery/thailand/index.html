@@ -6,14 +6,21 @@
 		<style>
 		
 		<script type="text/javascript">
-$('.grid').isotope({
-  layoutMode: 'packery',
-  itemSelector: '.grid-item'
-});
+var $grid = $('.grid').imagesLoaded( function() {
+  // init Packery after all images have loaded
+  $grid.packery({
+    itemSelector: '.grid-item',
+    percentPosition: true
+  });
+});  
+
  
 </script>
 <style>
-			* { box-sizing: border-box; }
+* { box-sizing: border-box; }
+
+/* force scrollbar */
+html { overflow-y: scroll; }
 
 body { font-family: sans-serif; }
 
@@ -21,7 +28,6 @@ body { font-family: sans-serif; }
 
 .grid {
   background: #DDD;
-  width: 100%;
 }
 
 /* clear fix */
@@ -34,37 +40,53 @@ body { font-family: sans-serif; }
 /* ---- .grid-item ---- */
 
 .grid-item {
-  float: left;
-  width: 24.99%;
-  //height: 100px;
-  background: #0D8;
-  border: 2px solid #333;
-  border-color: hsla(0, 0%, 0%, 0.7);
-  box-sizing: border-box;
-  
+  width: 33.333%;
 }
 
-img {
-	width: 100%;
+.grid-item {
+  float: left;
 }
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
 
 		</style>
 	</head>
 	<body>
-		<h1>Isotope - horizontalOrder</h1>
+		<h1>Packery - imagesLoaded callback</h1>
 
-		<div class="grid">
-			<div class="grid-item"><img src="/blog/gallery/thailand/01.jpg" /></div>
-			<div class="grid-item"><img src="/blog/gallery/thailand/02.jpg" /></div>
-			<div class="grid-item"><img src="/blog/gallery/thailand/03.jpg" /></div>
-			<div class="grid-item"><img src="/blog/gallery/thailand/04.jpg" /></div>
-			<div class="grid-item"><img src="/blog/gallery/thailand/05.jpg" /></div>
-			<div class="grid-item"><img src="/blog/gallery/thailand/06.jpg" /></div>
-			<div class="grid-item"><img src="/blog/gallery/thailand/07.jpg" /></div>
-			<div class="grid-item"><img src="/blog/gallery/thailand/08.jpg" /></div>
-			<div class="grid-item"><img src="/blog/gallery/thailand/09.jpg" /></div>
-			<div class="grid-item"><img src="/blog/gallery/thailand/10.jpg" /></div>
-			<div class="grid-item"><img src="/blog/gallery/thailand/11.jpg" /></div>
-		</div>
+<div class="grid">
+  <div class="grid-item">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" />
+  </div>
+  <div class="grid-item">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" />
+  </div>
+  <div class="grid-item">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" />
+  </div>
+  <div class="grid-item">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
+  </div>
+  <div class="grid-item">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" />
+  </div>
+  <div class="grid-item">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
+  </div>
+  <div class="grid-item">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" />
+  </div>
+  <div class="grid-item">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
+  </div>
+  <div class="grid-item">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
+  </div>
+</div>
+
 	</body>
 </html>
