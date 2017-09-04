@@ -5,6 +5,12 @@ title: Gallery
 
 {% for image in site.static_files %}
     {% if image.path contains 'photos/gallery' %}
-        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+	<div class="responsive">
+		<div class="gallery">
+			<a target="_blank" href="{{ site.baseurl }}{{ image.path }}">
+				<img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+			</a>
+		</div>
+	</div>
     {% endif %}
 {% endfor %}
