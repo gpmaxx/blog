@@ -198,20 +198,17 @@ div.gallery img {
     height: auto;
 }
 
-div.desc {
-    padding: .5vw;
-}
-
 div.responsive {
-    box-sizing: border-box;
+	float: left;
+	box-sizing: border-box;
 }
 
 .responsive {
-    padding: 0 .5vw 2vh .5vw;
-    float: left;
-    width: 24.99999%;
+	width: 20vw;
+	height: 15vw;
 }
 
+/*
 @media only screen and (max-width: 700px){
     .responsive {
         width: 49.99999%;
@@ -224,6 +221,9 @@ div.responsive {
         width: 100%;
     }
 }
+
+*/
+
 
 #gallery {
   /* Prevent vertical gaps */
