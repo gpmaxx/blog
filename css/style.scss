@@ -236,6 +236,10 @@ div.responsive {
   transition: .5s ease;
 }
 
+div.image:hover .overlay {
+  height: 10%;
+}
+
 .responsive {
 	width: 20vw;   // 4:3 image ratio of things will get messy
 	height: 15vw;
