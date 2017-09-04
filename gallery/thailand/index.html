@@ -13,11 +13,15 @@ Search Term: {{ searchterm }}
 	{{ image.path }}
 
     {% if image.path contains searchterm %}
-		yes
-	{% else %}
-	   no
+		<div class="responsive">
+			<div class="gallery">
+				<a target="_blank" href="{{ site.baseurl }}{{ image.path }}">
+					<img src="{{ site.baseurl }}{{ image.path }}" alt="image" title="title" />
+				</a>
+				<div class="desc">The description</div>
+			</div>
+		</div>
     {% endif %}
-	<br>
 {% endfor %}
 
 
