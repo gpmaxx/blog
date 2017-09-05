@@ -3,26 +3,22 @@ layout: default
 ---
 
 
-Current gallery: {{ page.galleryid }}
+<p>Current gallery: {{ page.galleryid }}</p>
 {% assign lastGallery = site.data.galleries | last %} 
-Latest gallery:  <a href="{{ site.baseurl }}/gallery/{{ lastGallery.id }}">{{ lastGallery.id }}</a>
+<p>Latest gallery:  <a href="{{ site.baseurl }}/gallery/{{ lastGallery.id }}">{{ lastGallery.id }}</a></p>
 {% for gallery in site.data.galleries  %}
 	{% assign galleries = galleries | join '|' | append: '|' | append: gallery.id %}
 {% endfor %}
 
-galleries1: {{ galleries }}
-
 {% assign galleries = galleries | split: '|' | sort %}
 
-galleries2: {{ galleries }}
-
-Other galleries: 
+<p>Other galleries: 
 {% for gallery in galleries %}
-{{ gallery }}
 	{% if gallery != page.galleryid %}
-		<a href="{{ site.baseurl }}/gallery/{{ gallery.id }}">{{ gallery.id }}</a>
+		<a href="{{ site.baseurl }}/gallery/{{ gallery }}">{{ gallery }}</a>
 	{% endif %}	
 {% endfor %}
+</p>
 
 {% assign searchterm = '/gallery/' | append: page.galleryid | append: '/'  %}
 <div class="gallery">
