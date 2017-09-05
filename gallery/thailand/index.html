@@ -13,10 +13,12 @@ gallery: thailand
 					{% assign desc = '' %}
 					{% for line in site.data.[page.gallery] %}
 						{% if image.name contains line.name %}
+							{{ image.name }}
 							{% assign desc = line.desc %}
 						{% endif %}
 					{% endfor %}
-					<a href="{{ site.baseurl}}{{ image.path }}" data-lightbox="{{ page.gallery }}" date-title="{{ desc }}">
+					desc: {{ desc }}
+					<a href="{{ site.baseurl}}{{ image.path }}" data-lightbox="{{ page.gallery }}" data-title="{{ desc }}">
 						<img src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.name }}" />
 					</a>
 				</div>
