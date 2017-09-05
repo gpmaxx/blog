@@ -11,10 +11,10 @@ gallery: thailand
 			<div class="responsive">
 				<div class="image">
 					{% assign desc = '' %}
+					{% assign filename = image.name | downcase %}
 					{% for line in site.data.[page.gallery] %}
-						{% assign filename = image.name | downcase %}
-						{% assign linename = line.name | downcase %}
-						{% if filename == line.name %}
+						{% assign linename = line.name | downcase %}		
+						{% if filename == linename %}
 							{% assign desc = line.desc %}
 						{% endif %}
 					{% endfor %}
