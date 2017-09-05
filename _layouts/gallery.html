@@ -8,7 +8,7 @@ layout: default
 {% endfor %}
 {% assign galleries = galleries | split: '|' | sort %}
 
-<p>Photo galleries: <strong>{{ page.galleryid }}</strong>{% unless galleries | size < 2 %},{% endunless %}</p>
+<p>Photo galleries: <strong>{{ page.galleryid }}</strong>{% unless galleries | size < 2 %},{% endunless %}
 
 {% assign comma = false %}
 {% for gallery in galleries %}
@@ -21,7 +21,7 @@ layout: default
 		{% endif %}
 	{% endif %}	
 {% endfor %}
-
+</p>
 
 {% assign searchterm = '/gallery/' | append: page.galleryid | append: '/'  %}
 <div class="gallery">
