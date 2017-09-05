@@ -72,6 +72,13 @@ function w3_close() {
 <script id="dsq-count-scr" src="//{{ site.disqus }}.disqus.com/count.js" async></script>
 
 <script src="{{ site.baseurl }}/scripts/lightbox-plus-jquery.js"></script>
+<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+	  'alwaysShowNavOnTouchDevices': true
+    })
+</script>
     {% include analytics.html %}
   </body>
 </html>
