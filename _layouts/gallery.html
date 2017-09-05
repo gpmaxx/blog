@@ -5,6 +5,16 @@ layout: default
 {% for gallery in site.data.galleries  %}
 	{% assign galleries = galleries | join '|' | append: '|' | append: gallery.id %}
 {% endfor %}
+{% assign galleries = galleries | split: '|' | sort %}
+Current gallery: {{ page.galleryid }}
+{% assign lastGallery = site.data.galleries | last %} 
+Latest gallery:  {{ lastGallery.id }}
+Other galleries: 
+{% for gallery in galleries %}
+	{% if gallery != page.galleryid %}
+		<a href="{{ site.baseurl }}/gallery/{{ gallery.id }}">{{ gallery.id }}</a>
+	{% endfor %}	
+{% endfor %}
 
 {% assign searchterm = '/gallery/' | append: page.galleryid | append: '/'  %}
 <div class="gallery">
