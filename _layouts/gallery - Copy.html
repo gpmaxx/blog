@@ -39,7 +39,7 @@ layout: default
 									{% assign text = line.text %}
 								{% endif %}
 							{% endfor %}
-							<a href="{{ site.baseurl}}/gallery/{{ page.galleryid }}/large/{{ image.name }}" rel="prettyPhoto[{{ page.galleryid }}]" title="{{ text }}">
+							<a href="{{ site.baseurl}}/gallery/{{ page.galleryid }}/large/{{ image.name }}" data-lightbox="{{ page.galleryid }}" data-title="{{ text }}">
 								<img src="{{ site.baseurl }}/gallery/{{ page.galleryid }}/small/{{ image.name }}" alt="{{ image.name }}" />
 							</a>
 						</div>
