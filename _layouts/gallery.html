@@ -8,8 +8,13 @@ layout: default
 {% assign galleries = galleries | split: '|' | sort %}
 Current gallery: {{ page.galleryid }}
 {% assign lastGallery = site.data.galleries | last %} 
-Latest gallery:  {{ lastGallery.id }}
-
+Latest gallery:  <a href="{{ site.baseurl }}/gallery/{{ lastGallery.id }}">{{ lastGallery.id }}</a>
+Other galleries: 
+{% for gallery in galleries %}
+	{% if gallery != page.galleryid %}
+		<a href="{{ site.baseurl }}/gallery/{{ gallery.id }}">{{ gallery.id }}</a>
+	{% endif %}	
+{% endfor %}
 
 {% assign searchterm = '/gallery/' | append: page.galleryid | append: '/'  %}
 <div class="gallery">
