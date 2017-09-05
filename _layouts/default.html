@@ -13,8 +13,7 @@
 	<!-- <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/style.css" /> -->
 	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/w3/w3.css" />
 	<!-- <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/lightbox/lightbox.css" /> -->
-	<script src="{{ site.baseurl }}/scripts/jquery-1.6.1.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="{{ site.baseurl }}/scripts/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+	
 	
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
 	
@@ -79,6 +78,10 @@ function w3_close() {
 
 <script id="dsq-count-scr" src="//{{ site.disqus }}.disqus.com/count.js" async></script>
 
+<script src="{{ site.baseurl }}/scripts/jquery-1.6.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="{{ site.baseurl }}/scripts/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+
+<!--
 <script src="{{ site.baseurl }}/scripts/lightbox-plus-jquery.js"></script>
 <script>
 /*
@@ -89,12 +92,14 @@ function w3_close() {
     })
 	*/
 </script>
+-->
 
 <script type="text/javascript" charset="utf-8">
   $(document).ready(function(){
-    $("a[rel^='prettyPhoto']").prettyPhoto();
+    $("a[rel^='prettyPhoto']").prettyPhoto({theme: 'facebook',slideshow:5000, autoplay_slideshow:true});
   });
 </script>
+
     {% include analytics.html %}
   </body>
 </html>
