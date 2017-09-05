@@ -9,15 +9,17 @@ gallery: thailand
 {% for image in site.static_files %}
     {% if image.path contains searchterm and image.extname == '.jpg' %}	
 			<div class="responsive">
-				<div class="image">				
-					{% assign desc = image.path | split: '/' | last %}
+				<div class="image">
+					{% assign desc = '' %}
+					{% assign filename = image.name | downcase %}
 					{% for line in site.data.[page.gallery] %}
-						{% if image.path contains line.file %}
+						{% assign linename = line.name | downcase %}		
+						{% if filename == linename %}
 							{% assign desc = line.desc %}
 						{% endif %}
 					{% endfor %}
-					<a href="{{ site.baseurl}}{{ image.path }}" target="_blank">
-						<img src="{{ site.baseurl }}{{ image.path }}" title="{{ desc }}" />
+					<a href="{{ site.baseurl}}{{ image.path }}" data-lightbox="{{ page.gallery }}" data-title="{{ desc }}">
+						<img src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.name }}" />
 					</a>
 				</div>
 			</div>		
