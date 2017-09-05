@@ -3,19 +3,17 @@ layout: default
 ---
 
 
-<p>Current gallery: {{ page.galleryid }}</p>
-{% assign lastGallery = site.data.galleries | last %} 
-<p>Latest gallery:  <a href="{{ site.baseurl }}/gallery/{{ lastGallery.id }}">{{ lastGallery.id }}</a></p>
 {% for gallery in site.data.galleries  %}
 	{% assign galleries = galleries | join '|' | append: '|' | append: gallery.id %}
 {% endfor %}
-
 {% assign galleries = galleries | split: '|' | sort %}
 
-<p>Other galleries: 
+<p>Photo galleries: 
 {% for gallery in galleries %}
 	{% if gallery != page.galleryid %}
 		<a href="{{ site.baseurl }}/gallery/{{ gallery }}">{{ gallery }}</a>
+	{% else %}
+		, {{ gallery }}
 	{% endif %}	
 {% endfor %}
 </p>
