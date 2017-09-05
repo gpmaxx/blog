@@ -2,8 +2,9 @@
 layout: default
 ---
 
-{% for galleryname in site.data.galleries.name | sort  %}
-	<a href="{{ site.baseurl }}/gallery/{{ galleryname}}">{{ galleryname}}</a>
+Galleries:
+{% for gallery in site.data.galleries  %}
+	<a href="{{ site.baseurl }}/gallery/{{ gallery.id }}">{{ gallery.id }}</a>
 {% endfor %}
 
 {% assign searchterm = '/gallery/' | append: page.galleryid | append: '/'  %}
