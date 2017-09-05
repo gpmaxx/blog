@@ -1,13 +1,14 @@
--	id: thailand
-	description: This is the Thailand Gallery
-	images:
-	-	name: 01.jpg
-		text: This is the first image
-	-	name: 02.jpg
-		text: This is the 2nd image
-	-	name: 03.jpg
-		text: This is the 3rd image
--	id: canada
-	description: This is the Canada gallery
-	-	name: 01.jpg
-		text: This is the first Canada image
+-   id: thailand
+    description: This is the Thailand gallery
+    images:
+    -   name: 01.jpg
+        text: This is the first image
+    -   name: 02.jpg
+        text: This is the 2nd image
+    -   name: 03.jpg
+        text: This is the 3rd image
+-   id: canada
+    description: This is the Canada gallery
+    images:
+    -   name: 01.jpg
+        text: This is the first canada image
