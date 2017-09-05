@@ -3,26 +3,31 @@ layout: default
 footer: true
 ---
 
-{% assign searchterm = '/gallery/' | append: page.gallery | append: '/'  %}
+{% assign searchterm = '/gallery/' | append: page.galleryid | append: '/'  %}
 <div class="gallery">
-{% for image in site.static_files %}
-    {% if image.path contains searchterm and image.extname == '.jpg' %}	
-			<div class="responsive">
-				<div class="image">
-					{% assign desc = '' %}
-					{% assign filename = image.name | downcase %}
-					{% for line in site.data.[page.gallery] %}
-						{% assign linename = line.name | downcase %}		
-						{% if filename == linename %}
-							{% assign desc = line.desc %}
-						{% endif %}
-					{% endfor %}
-					<a href="{{ site.baseurl}}{{ image.path }}" data-lightbox="{{ page.gallery }}" data-title="{{ desc }}">
-						<img src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.name }}" />
-					</a>
-				</div>
-			</div>		
-    {% endif %}
+{% for gallery in site.data.galleries %}
+	{% if gallery.id == page.galleryid %}
+		{% for image in site.static_files %}
+			{% if image.path contains searchterm and image.extname == '.jpg' %}	
+					<div class="responsive">
+						<div class="image">
+							{% assign text = '' %}
+							{% assign filename = image.name | downcase %}
+							{% for line in gallery.images %}
+								{% assign linename = line.name | downcase %}		
+								{% if filename == linename %}
+									{% assign text = line.text %}
+								{% endif %}
+							{% endfor %}
+							<a href="{{ site.baseurl}}{{ image.path }}" data-lightbox="{{ page.galleryid }}" data-title="{{ text }}">
+								<img src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.name }}" />
+							</a>
+						</div>
+					</div>		
+			{% endif %}
+		{% endfor %}
+		{% break %}
+	{% endif %}
 {% endfor %}
 </div>
 
