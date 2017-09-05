@@ -8,15 +8,20 @@ layout: default
 {% endfor %}
 {% assign galleries = galleries | split: '|' | sort %}
 
-<p>Photo galleries: 
+Photo gallery: <strong>{{ page.galleryid }}</strong>{% unless galleries | size < 2 %},{% endunless %}
+
+{% assign comma = false %}
 {% for gallery in galleries %}
 	{% if gallery != page.galleryid %}
-		<a href="{{ site.baseurl }}/gallery/{{ gallery }}">{{ gallery }}</a>
-	{% else %}
-		, {{ gallery }}
+		{% if comma == true %}
+			<a href="{{ site.baseurl }}/gallery/{{ gallery }}" class="smaller cutspace">, {{ gallery }}</a>
+		{% else %}
+			<a href="{{ site.baseurl }}/gallery/{{ gallery }}" class="smaller cutspace">{{ gallery }}</a>
+			{% assign comma = true %}
+		{% endif %}
 	{% endif %}	
 {% endfor %}
-</p>
+
 
 {% assign searchterm = '/gallery/' | append: page.galleryid | append: '/'  %}
 <div class="gallery">
