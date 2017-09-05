@@ -10,7 +10,7 @@ gallery: thailand
     {% if image.path contains searchterm and image.extname == '.jpg' %}	
 			<div class="responsive">
 				<div class="image">
-					{% assgn desc = '' %}
+					{% assign desc = '' %}
 					{% for line in site.data.[page.gallery] %}
 						{% if image.name contains line.name %}
 							{% assign desc = line.desc %}
