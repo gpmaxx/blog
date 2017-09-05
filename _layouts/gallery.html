@@ -18,6 +18,7 @@ galleries2: {{ galleries }}
 
 Other galleries: 
 {% for gallery in galleries %}
+{{ gallery }}
 	{% if gallery != page.galleryid %}
 		<a href="{{ site.baseurl }}/gallery/{{ gallery.id }}">{{ gallery.id }}</a>
 	{% endif %}	
