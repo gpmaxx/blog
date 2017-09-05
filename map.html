@@ -40,7 +40,7 @@ footer: true
 		{% endfor %}
 		
 		// Add a marker clusterer to manage the markers.
-        var markerCluster = new MarkerClusterer(map, markers,{imagePath: '{{ site.baseurl }}/images/m'});
+        var markerCluster = new MarkerClusterer(map, markers,{imagePath: '{{ site.baseurl }}/images/map/m'});
 		}
 		
 		
@@ -57,7 +57,7 @@ footer: true
             '</div>';
 		
 		if (!current) {
-			var image = '{{ site.baseurl }}/images/mapprevloc.png';
+			var image = '{{ site.baseurl }}/images/map/mapprevloc.png';
 			var marker = new google.maps.Marker({
 				position: geo,
 				title: name,
@@ -66,7 +66,7 @@ footer: true
 			});
 			}
 		else {
-			var image = '{{ site.baseurl }}/images/mapcurrloc.png';
+			var image = '{{ site.baseurl }}/images/map/mapcurrloc.png';
 			var marker = new google.maps.Marker({
 				position: geo,
 				title: name,
