@@ -9,9 +9,10 @@ gallery: thailand
 {% for image in site.static_files %}
     {% if image.path contains searchterm and image.extname == '.jpg' %}	
 			<div class="responsive">
-				<div class="image">				
+				<div class="image">
+					{% assgn desc = '' %}
 					{% for line in site.data.[page.gallery] %}
-						{% if image.path contains line.file %}
+						{% if image.name contains line.name %}
 							{% assign desc = line.desc %}
 						{% endif %}
 					{% endfor %}
@@ -23,3 +24,8 @@ gallery: thailand
     {% endif %}
 {% endfor %}
 </div>
+
+
+{% for line in site.data.[page.gallery] %}
+						{{ line.name }}
+					{% endfor %}
