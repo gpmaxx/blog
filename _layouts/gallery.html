@@ -2,13 +2,20 @@
 layout: default
 ---
 
-{% for gallery in site.data.galleries  %}
-	{% assign galleries = galleries | join '|' | append: '|' | append: gallery.id %}
-{% endfor %}
-{% assign galleries = galleries | split: '|' | sort %}
+
 Current gallery: {{ page.galleryid }}
 {% assign lastGallery = site.data.galleries | last %} 
 Latest gallery:  <a href="{{ site.baseurl }}/gallery/{{ lastGallery.id }}">{{ lastGallery.id }}</a>
+{% for gallery in site.data.galleries  %}
+	{% assign galleries = galleries | join '|' | append: '|' | append: gallery.id %}
+{% endfor %}
+
+galleries1: {{ galleries }}
+
+{% assign galleries = galleries | split: '|' | sort %}
+
+galleries2: {{ galleries }}
+
 Other galleries: 
 {% for gallery in galleries %}
 	{% if gallery != page.galleryid %}
