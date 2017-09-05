@@ -19,7 +19,8 @@ footer: true
 				[Jekyll-sitemap](https://rubygems.org/gems/jekyll-sitemap){:target="_blank"},
 				[Jekyll-feed](https://rubygems.org/gems/jekyll-feed){:target="_blank"}     
 **Hosting:**	[GitHub](https://github.com/){:target="_blank"}     
-**Comments:**	[Disqus](https://disqus.com/){:target="_blank"}   
+**Comments:**	[Disqus](https://disqus.com/){:target="_blank"}
+   
 
 ### Theme
 
@@ -54,6 +55,10 @@ Fonts provides via [Google Fonts](https://fonts.google.com){:target="_blank"}
 ### Map
 
 Powered by [Google Maps](https://www.google.com/maps){:target="_blank"} using [MarkerClusterer](https://github.com/googlemaps/v3-utility-library/tree/master/markerclusterer){:target="_blank"}
+
+### Photo Gallery
+
+Powered by [Lightbox2](http://lokeshdhakar.com/projects/lightbox2/){:tagert="_blank"} by Lokesh Dhakar. Provided under [The MIT License](https://raw.githubusercontent.com/lokesh/lightbox2/master/LICENSE){:target="_blank"}
 
 ### Photos
 
