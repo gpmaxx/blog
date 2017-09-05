@@ -24,7 +24,7 @@ layout: default
 </p>
 
 {% assign searchterm = '/gallery/' | append: page.galleryid | append: '/small/' %}
-<div class="gallery">
+<div class="gallery clearfix">
 {% for gallery in site.data.galleries %}
 	{% if gallery.id == page.galleryid %}
 		{% for image in site.static_files %}
