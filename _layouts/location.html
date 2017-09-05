@@ -4,7 +4,7 @@ layout: default
 
 {% include catget.html isPost=false %}
 
-Posts related to: <strong>{{ page.title }}</strong>{% unless cats | size < 2 %},{% endunless %}
+Posts related to: <strong>{{ page.title }}</strong>{% if cats.size > 1 %},{% endif %}
 
 {% assign comma = false %}
 {% for c in cats %}
