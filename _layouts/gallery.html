@@ -8,15 +8,15 @@ layout: default
 {% endfor %}
 {% assign galleries = galleries | split: '|' | sort %}
 
-Photo galleries: <strong>{{ page.galleryid }}</strong>{% unless galleries | size < 2 %},{% endunless %}
+<p>Photo galleries: <strong>{{ page.galleryid }}</strong>{% unless galleries | size < 2 %},{% endunless %}</p>
 
 {% assign comma = false %}
 {% for gallery in galleries %}
 	{% if gallery != page.galleryid %}
 		{% if comma == true %}
-			<a href="{{ site.baseurl }}/gallery/{{ gallery }}">, {{ gallery }}</a>
+			<a href="{{ site.baseurl }}/gallery/{{ gallery }}" class="cutspace">, {{ gallery }}</a>
 		{% else %}
-			<a href="{{ site.baseurl }}/gallery/{{ gallery }}">{{ gallery }}</a>
+			<a href="{{ site.baseurl }}/gallery/{{ gallery }}" class="cutspace">{{ gallery }}</a>
 			{% assign comma = true %}
 		{% endif %}
 	{% endif %}	
