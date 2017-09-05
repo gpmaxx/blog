@@ -10,7 +10,7 @@ layout: default
 
 <p>Photo galleries: <strong>{{ page.galleryid }}</strong>
 
-size: {{ galleries | size }}
+size: {{ site.data.galleries | size }}
 
 {% assign comma = false %}
 {% for gallery in galleries %}
