@@ -1,7 +1,8 @@
 ---
-layout: default
-title: Gallery
+layout: blank
 ---
 
-hello world
-
+<head>
+  {% assign gallery = site.data.galleries | last %}
+  <meta http-equiv="refresh" content="0; URL={{ site.baseurl }}/gallery/{{ gallery.id }}" />
+</head>
