@@ -23,7 +23,7 @@ layout: default
 {% endfor %}
 </p>
 
-{% assign searchterm = '/gallery/' | append: page.galleryid | append: '/'  %}
+{% assign searchterm = '/gallery/small/' | append: page.galleryid | append: '/'  %}
 <div class="gallery">
 {% for gallery in site.data.galleries %}
 	{% if gallery.id == page.galleryid %}
@@ -39,8 +39,8 @@ layout: default
 									{% assign text = line.text %}
 								{% endif %}
 							{% endfor %}
-							<a href="{{ site.baseurl}}{{ image.path }}" data-lightbox="{{ page.galleryid }}" data-title="{{ text }}">
-								<img src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.name }}" />
+							<a href="{{ site.baseurl}}/gallery/large/{{ image.name }}" data-lightbox="{{ page.galleryid }}" data-title="{{ text }}">
+								<img src="{{ site.baseurl }}/gallery/small/{{ image.name }}" alt="{{ image.name }}" />
 							</a>
 						</div>
 					</div>		
