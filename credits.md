@@ -58,7 +58,7 @@ Powered by [Google Maps](https://www.google.com/maps){:target="_blank"} using [M
 
 ### Photo Gallery
 
-Powered by [Lightbox2](http://lokeshdhakar.com/projects/lightbox2/){:tagert="_blank"} by Lokesh Dhakar. Provided under [The MIT License](https://raw.githubusercontent.com/lokesh/lightbox2/master/LICENSE){:target="_blank"}
+Powered by [Lightbox2](http://lokeshdhakar.com/projects/lightbox2/){:target="_blank"} by Lokesh Dhakar. Provided under [The MIT License](https://raw.githubusercontent.com/lokesh/lightbox2/master/LICENSE){:target="_blank"}
 
 ### Photos
 
