@@ -8,6 +8,7 @@ layout: default
 {% endfor %}
 {% assign galleries = galleries | split: '|' | sort %}
 
+<div class="gallerySection">
 <p>Galleries: <strong>{{ page.galleryid }}</strong>{% if site.data.galleries.size > 1 %},{% endif %}
 
 {% assign comma = false %}
@@ -26,7 +27,7 @@ layout: default
 
 
 </p>
-<div class="gallerySection">
+
 	Jump to: <a href="#photos">photos</a> | <a href="#videos">videos</a>
 </div>
 
