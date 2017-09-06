@@ -107,7 +107,10 @@ function w3_close() {
 		$("a[rel^='prettyPhoto']").prettyPhoto({
 			slideshow: false, /* false OR interval time in ms */
 			overlay_gallery: false, /* If set to true, a gallery will overlay the fullscreen image on mouse over */
-			markup: '<div class="pp_pic_holder"> \
+			show_title: false,
+			
+			/* removed the pavigation and expand buttons from the markup */
+			markup: '<div class="pp_pic_holder">  \
 						<div class="ppt">&nbsp;</div> \
 						<div class="pp_top"> \
 							<div class="pp_left"></div> \
