@@ -27,7 +27,7 @@ layout: default
 
 {% for gallery in site.data.galleries %}
 	{% if gallery.id == page.galleryid %}
-	<div class="gallery clearfix">
+	<div class="gallery">
 		{% for image in site.static_files %}
 			{% if image.path contains searchterm and image.extname == '.jpg' %}	
 					<div class="responsive">
@@ -48,7 +48,7 @@ layout: default
 			{% endif %}
 		{% endfor %}
 	</div>
-	<div class="gallery clearfix">
+	<div class="gallery">
 		{% for video in gallery.videos %}
 			<div class="responsive">
 				<div class="galleryContent">
