@@ -21,6 +21,10 @@ layout: default
 		{% endif %}
 	{% endif %}	
 {% endfor %}
+
+&nbsp;
+<a href="#photos">Photos</a>
+<a href="#videos">Videos</a>
 </p>
 
 {% assign searchterm = '/gallery/' | append: page.galleryid | append: '/small/' %}
@@ -28,6 +32,7 @@ layout: default
 {% for gallery in site.data.galleries %}
 	{% if gallery.id == page.galleryid %}
 	<div class="gallery clearfix">
+		<a name="photos"></a>
 		{% for image in site.static_files %}
 			{% if image.path contains searchterm and image.extname == '.jpg' %}	
 					<div class="responsive">
@@ -49,6 +54,7 @@ layout: default
 		{% endfor %}
 	</div>
 	<div class="gallery clearfix">
+		<a name="videos"></a>
 		{% for video in gallery.videos %}
 			<div class="responsive">
 				<div class="galleryContent">
