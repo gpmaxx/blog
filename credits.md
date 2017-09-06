@@ -58,7 +58,7 @@ Powered by [Google Maps](https://www.google.com/maps){:target="_blank"} using [M
 
 ### Photo Gallery
 
-Powered by [Lightbox2](http://lokeshdhakar.com/projects/lightbox2/){:target="_blank"} by Lokesh Dhakar. Provided under [The MIT License](https://raw.githubusercontent.com/lokesh/lightbox2/master/LICENSE){:target="_blank"}
+Powered by [prettyPhoto v3.1.6](http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/){:target="_blank"} © Copyright, Stephane Caron [http://www.no-margin-for-errors.com](http://www.no-margin-for-errors.com){:target="_blank"}. Used under [GPLV2 license](http://www.gnu.org/licenses/gpl-2.0.html){:target="_blank"}
 
 ### Photos
 
