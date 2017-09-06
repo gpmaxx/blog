@@ -93,13 +93,66 @@ function w3_close() {
 	*/
 </script>
 -->
-
+<!--
 <script type="text/javascript" charset="utf-8">
   $(document).ready(function(){
     $("a[rel^='prettyPhoto']").prettyPhoto({theme: 'pp_default',animation_speed: 'fast', slideshow: 2000, overlay_gallery: false,social_tools: false });
   });
 </script>
+-->
+  
+<script type="text/javascript" charset="utf-8">
 
+	$(document).ready(function(){
+		$("a[rel^='prettyPhoto']").prettyPhoto({
+			slideshow: false, /* false OR interval time in ms */
+			overlay_gallery: false, /* If set to true, a gallery will overlay the fullscreen image on mouse over */
+			counter_separator_label: ' of ', /* The separator for the gallery counter 1 "of" 2 */
+			markup: '<div class="pp_pic_holder"> \
+						<div class="ppt">&nbsp;</div> \
+						<div class="pp_top"> \
+							<div class="pp_left"></div> \
+							<div class="pp_middle"></div> \
+							<div class="pp_right"></div> \
+						</div> \
+						<div class="pp_content_container"> \
+							<div class="pp_left"> \
+							<div class="pp_right"> \
+								<div class="pp_content"> \
+									<div class="pp_loaderIcon"></div> \
+									<div class="pp_fade"> \
+										<div class="pp_hoverContainer"> \
+											<a class="pp_next" href="#">next</a> \
+											<a class="pp_previous" href="#">previous</a> \
+										</div> \
+										<div id="pp_full_res"></div> \
+										<div class="pp_details"> \
+											<div class="pp_nav"> \
+												<a href="#" class="pp_arrow_previous">Previous</a> \
+												<p class="currentTextHolder">0/0</p> \
+												<a href="#" class="pp_arrow_next">Next</a> \
+											</div> \
+											<p class="pp_description"></p> \
+											{pp_social} \
+											<a class="pp_close" href="#">Close</a> \
+										</div> \
+									</div> \
+								</div> \
+							</div> \
+							</div> \
+						</div> \
+						<div class="pp_bottom"> \
+							<div class="pp_left"></div> \
+							<div class="pp_middle"></div> \
+							<div class="pp_right"></div> \
+						</div> \
+					</div> \
+					<div class="pp_overlay"></div>',
+			social_tools: false
+		});
+	});
+</script>
+  
     {% include analytics.html %}
   </body>
 </html>

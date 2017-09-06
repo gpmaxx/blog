@@ -208,7 +208,7 @@
 			$pp_overlay.show().fadeTo(settings.animation_speed,settings.opacity);
 
 			// Display the current position
-			$pp_pic_holder.find('.currentTextHolder').text((set_position+1) + settings.counter_separator_label + $(pp_images).size());
+			$pp_pic_holder.find('.currentTextHolder').text('Image ' + (set_position+1) + settings.counter_separator_label + $(pp_images).size());
 
 			// Set the description
 			if(typeof pp_descriptions[set_position] != 'undefined' && pp_descriptions[set_position] != ""){
