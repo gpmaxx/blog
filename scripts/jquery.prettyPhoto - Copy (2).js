@@ -577,11 +577,11 @@
 				resized = true, fitting = false;
 			
 				while (!fitting){
-					if((pp_containerWidth > windowWidth)){
-						imageWidth = (windowWidth - 200);
+					if((pp_containerWidth > windowWidth - 38)){
+						imageWidth = (windowWidth - 38);
 						imageHeight = (height/width) * imageWidth;
-					}else if((pp_containerHeight > windowHeight)){
-						imageHeight = (windowHeight - 200);
+					}else if((pp_containerHeight > windowHeight - 100)){
+						imageHeight = (windowHeight - 100);
 						imageWidth = (width/height) * imageHeight;
 					}else{
 						fitting = true;
