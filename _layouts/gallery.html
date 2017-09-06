@@ -8,7 +8,7 @@ layout: default
 {% endfor %}
 {% assign galleries = galleries | split: '|' | sort %}
 
-<p>Galleries: <strong>{{ page.galleryid }}</strong>{% if site.data.galleries.size > 1 %},{% endif %}
+<p class="galleryId">Galleries: <strong>{{ page.galleryid }}</strong>{% if site.data.galleries.size > 1 %},{% endif %}
 
 {% assign comma = false %}
 {% for gallery in galleries %}
