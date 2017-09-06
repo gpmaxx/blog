@@ -27,7 +27,7 @@ layout: default
 
 {% for gallery in site.data.galleries %}
 	{% if gallery.id == page.galleryid %}
-	<div class="gallery">
+	<div class="gallery clearfix">
 		{% for image in site.static_files %}
 			{% if image.path contains searchterm and image.extname == '.jpg' %}	
 					<div class="responsive">
@@ -48,17 +48,7 @@ layout: default
 			{% endif %}
 		{% endfor %}
 	</div>
-	<div class="gallery">
-		{% for video in gallery.videos %}
-			<div class="responsive">
-				<div class="galleryContent">
-					<a href="https://www.youtube.com/watch?v={{ video.v }}?rel=0&hd=1" rel="prettyPhoto[{{ page.galleryid }}]" title="{{ video.text }}">
-						<iframe src="https://www.youtube.com/embed/{{ video.v }}?rel=0&hd=1" frameborder="0" allowfullscreen />
-					</a>
-				</div>
-			</div>
-		{% endfor %}
-	</div>
+
 	{% endif %}
 	{% break %}
 {% endfor %}
