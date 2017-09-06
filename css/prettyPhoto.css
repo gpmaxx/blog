@@ -169,14 +169,5 @@ div.dark_rounded #pp_full_res .pp_inline,div.dark_square #pp_full_res .pp_inline
 .pp_top .pp_right,.pp_bottom .pp_right{height:20px;left:auto;position:absolute;right:0;top:0;width:20px}
 .pp_fade,.pp_gallery li.default a img{display:none}
 
-@media only screen and (max-width: 480px) { 
-
-        *[class~=pp_pic_holder] { width: 100% !important; left: 0px !important; }  
-        *[class~=pp_hoverContainer] { width: 90% !important; height: 180px !important;  }  
-        *[class~=pp_fade] { width: 389px !important;  } 
-        *[class~=pp_hoverContainer] { height: 190px !important;  }   
-        *[class~=pp_right] { height: 220px !important;  }   
-        *[class~=pp_content]  { height: 100% !important; width: 320px !important; }  
-        #fullResImage { height: 100% !important; width: 320px !important; }  
 
 }
