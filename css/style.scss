@@ -206,10 +206,12 @@ div.image img {
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
+	cursor: zoom-in;
 }
 
 div.image iframe {
 	height: 100%;
+	width: 100%
 }
 
 div.image:hover img {
