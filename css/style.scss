@@ -235,6 +235,12 @@ div.responsive {
 	float:right;
 }
 
+@media only screen and (max-width: 1000px){
+    .galleryLinks {
+        float: clear;
+    }
+}
+
 .galleryId {
 	display: inline;
 }
