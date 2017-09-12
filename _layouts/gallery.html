@@ -13,12 +13,10 @@ layout: default
 {% assign comma = false %}
 {% for gallery in galleries %}
 	{% if gallery != page.galleryid %}
-		{% if comma == true %}
-			<a href="{{ site.baseurl }}/gallery/{{ gallery }}" class="cutspace">, {{ gallery }}</a>
-		{% else %}
-			<a href="{{ site.baseurl }}/gallery/{{ gallery }}" class="cutspace">{{ gallery }}</a>
+		{% if comma %},
 			{% assign comma = true %}
 		{% endif %}
+		<a href="{{ site.baseurl }}/gallery/{{ gallery }}" class="cutspace">{{ gallery }}</a>
 	{% endif %}	
 {% endfor %}
 </p>
