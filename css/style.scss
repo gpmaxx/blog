@@ -233,13 +233,12 @@ div.responsive {
 
 .galleryLinks {
 	float:right;
+	
+@include mobile {
+    float: none;
+  }
 }
 
-@media only screen and (max-width: 500px){
-    .galleryLinks {
-        float: none;
-    }
-}
 
 .galleryId {
 	display: inline;
