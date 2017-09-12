@@ -56,13 +56,15 @@ layout: default
 	<div class="gallery clearfix">
 		<a name="videos"></a>
 		{% for video in gallery.videos %}
-			<div class="responsive">
-				<div class="galleryContent">
-					<a href="https://www.youtube.com/watch?v={{ video.v }}?rel=0&hd=1" rel="prettyPhoto[{{ page.galleryid }}]" title="{{ video.text }}">
-						<iframe src="https://www.youtube.com/embed/{{ video.v }}?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
-					</a>
+			{% if video.v != "" %}
+				<div class="responsive">
+					<div class="galleryContent">
+						<a href="https://www.youtube.com/watch?v={{ video.v }}?rel=0&hd=1" rel="prettyPhoto[{{ page.galleryid }}]" title="{{ video.text }}">
+							<iframe src="https://www.youtube.com/embed/{{ video.v }}?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
+						</a>
+					</div>
 				</div>
-			</div>
+			{% endif %}
 		{% endfor %}
 	</div>
 
