@@ -56,7 +56,7 @@ layout: default
 	<div class="gallery clearfix">
 		<a name="videos"></a>
 		{% for video in gallery.videos %}
-			{% if video.v != "" %}
+			{% if video.v != "dummy" %}
 				<div class="responsive">
 					<div class="galleryContent">
 						<a href="https://www.youtube.com/watch?v={{ video.v }}?rel=0&hd=1" rel="prettyPhoto[{{ page.galleryid }}]" title="{{ video.text }}">

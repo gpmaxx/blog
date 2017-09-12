@@ -8,5 +8,5 @@
     -   name: 03.jpg
         text: This is the 3rd image
     videos:
-    -   v:  
+    -   v: dummy
         text: This is a test video
