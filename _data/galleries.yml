@@ -10,3 +10,11 @@
     videos:
     -   v: dummy
         text: This is a test video
+-   id: canada
+    description: This is the Canada gallery
+    images:
+    -   name: 01.jpg
+        text: This is the first image
+    videos:
+    -   v: dummy
+        text: This is a test video

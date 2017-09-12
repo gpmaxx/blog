@@ -8,7 +8,7 @@ thumb:
 last_modified_at: 2017-09-03
 ---
 
-First!  After clearing all the other test posts this will remain and the only placeholder.  
+First!  After clearing all the other test posts this will remain as the only placeholder.  
 
 ** Welcome to my blog **  
   
