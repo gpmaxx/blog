@@ -7,7 +7,7 @@ footer: true
 ### Development   
   
 **Built By:** 			    Greg Lipscomb  
-**Design Last Updated:** 	Aug 19, 2017  
+**Design Last Updated:** 	Sept 12, 2017  
 **Build Using:**		    [NotePad++](https://notepad-plus-plus.org/){:target="_blank"}, [GIMP](https://www.gimp.org/){:target="_blank"}  
 **Site Repositories:**		[lipscomb.ca](https://github.com/gpmaxx/gpmaxx.github.io){:target="_blank"}, [lipscomb.ca/blog](https://github.com/gpmaxx/blog){:target="_blank"}
 
